@@ -1,0 +1,47 @@
+[
+  {
+    "title": "HyperLathe",
+    "page": [
+      {
+        "id": 1,
+        "title": "HyperLathe | Front End Development",
+        "headline1": "Richard Young: Front-end Developer",
+        "content1": ["<p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>"],
+        "headline2": "Problem solving on both a macro and micro level",
+        "content2": ["<p>HTML, CSS/SCSS, JavaScript, VueJS, React, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, jQuery, WordPress, image editing, asset creation & optimising, video/audio editing.</p>"],
+        "headline3": "Featured Projects",
+        "content3": ["<p>For a more comprehensive list please check out my <a href='/portfolio/'>portfolio</a>.</p>"]
+      },
+      {
+        "id": 2,
+        "title": "HyperLathe | Portfolio",
+        "img": "rich.jpg",
+        "headline1": "Portfolio",
+        "content1": "Creative Design Professional and Branding Specialist, based out of Seattle WA.",
+        "headline2": "Contact",
+        "content2": [
+          "<a href=\"mailto:jennifer@furycs.com\">Jennifer@furycs.com</a> <a href=\"https://www.linkedin.com/in/furycs/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>"
+        ],
+        "headline3": "Other Projects",
+        "content3": [
+          "<a href=\"https://www.roguealamode.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rogue à la Mode</a> <a href=\"https://www.etsy.com/shop/RogueALaModeShop\" target=\"_blank\" rel=\"noopener noreferrer\">Etsy</a> <a href=\"https://www.spoonflower.com/profiles/rogue_a_la_mode\" target=\"_blank\" rel=\"noopener noreferrer\">Spoonflower</a>"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "HyperLathe | `About`",
+        "img": "rich.jpg",
+        "headline1": "About me",
+        "content1": "Creative Design Professional and Branding Specialist, based out of Seattle WA.",
+        "headline2": "Contact",
+        "content2": [
+          "<a href=\"mailto:jennifer@furycs.com\">Jennifer@furycs.com</a> <a href=\"https://www.linkedin.com/in/furycs/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>"
+        ],
+        "headline3": "Other Projects",
+        "content3": [
+          "<a href=\"https://www.roguealamode.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Rogue à la Mode</a> <a href=\"https://www.etsy.com/shop/RogueALaModeShop\" target=\"_blank\" rel=\"noopener noreferrer\">Etsy</a> <a href=\"https://www.spoonflower.com/profiles/rogue_a_la_mode\" target=\"_blank\" rel=\"noopener noreferrer\">Spoonflower</a>"
+        ]
+      }
+    ]
+  }
+]

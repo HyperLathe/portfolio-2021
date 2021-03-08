@@ -1,0 +1,1033 @@
+[
+  {
+    "id": "australian-restaurants",
+    "featured": false,
+    "nav": "Australian Restaurants",
+    "title": "Etihad Australian Restaurant long-form - Interactive advertorial for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "An interactive advertorial involving animation, scrolling parallax features, and a video component.",
+      "For the video element I used JavaScript to customise the appearance and function of the start/stop control, and then used Adobe After Effects to stabilise and optimise the source video itself."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/taste-of-australia/best-sydney-restaurants/",
+        "label": "Etihad - Best Sydney Restaurants: Interactive, responsive long-form advertorials"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "AEM",
+      "Telegraph",
+      "Australian Tourism",
+      "Etihad",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation",
+      "Video"
+    ]
+  },
+  {
+    "id": "australian-tourism",
+    "featured": false,
+    "nav": "Australian Tourism",
+    "title": "Australian Tourism long-forms - Interactive advertorials for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A series of four long-form advertorial pieces involving animation and scrolling parallax features.",
+      "Challenges involved building various selectable gallery elements, including an interactive events calendar and profile components, that all had to look and function perfectly on all viewports."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/culture-and-events-australia/",
+        "label": "Culture and events Australia - Interactive, responsive long form advertorials"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "AEM",
+      "Telegraph",
+      "Australian Tourism",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation"
+    ]
+  },
+  {
+    "id": "before-the-tour",
+    "featured": false,
+    "nav": "Before the Tour",
+    "title": "Before the Tour",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Beforethetour.com was a site designed to promote Le Tour - One Day Ahead; a way for cycling enthusiasts to experience the route of the famous Tour de France a day ahead of the main event. The organisers promote a package for participants including travel, meals, accommodation etc.",
+      "This was another project designed by Philosophy Design in London, and built by me as a single-page responsive site using Bootstrap, with some jQuery for functionality. They also requested the implementation of a customised Twitter feed and contact form."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Before the Tour"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Twitter",
+      "Philosophy Design",
+      "Bootstrap",
+      "jQuery",
+      "Before the Tour",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "boeing",
+    "featured": false,
+    "nav": "Boeing",
+    "title": "Boeing",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "Boeing P-8A Infographic - Desktop"
+      },
+      {
+        "imgref": "",
+        "imgalt": "Boeing P-8A Infographic - Mobile"
+      }
+    ],
+    "body": [
+      "An animated interactive infographic built with VueJS, designed to showcase the interior if the Boeing P-8A Poseidon Maritime Patrol Aircraft.",
+      "Special consideration was required to ensure the functionality worked equally well on mobile as well as desktop."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/business/boeing-uk/inside-the-p8a-poseidon/",
+        "label": "Inside the Boeing P-8A Poseidon Maritime Patrol Aircraft"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Infographics",
+      "AEM",
+      "Boeing",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Telegraph"
+    ]
+  },
+  {
+    "id": "boston-ivy",
+    "featured": false,
+    "nav": "Boston Ivy",
+    "title": "Boston Ivy - gTLD Brokers",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Boston Ivy was a FTSE 250-backed company that provided specialised website domain extensions in the financial services sector.",
+      "I was brought in to design and build a number of projects, including a rebuild of bostonivy.co from the ground up, and a number of financial service sites, utilising WordPress/PHP. I also built working prototypes, including a working mockup of the Boston Ivy site.",
+      "I also built and sent a number of email templates via Mailchimp."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Boston Ivy "
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Emails",
+      "Design",
+      "Mailchimp",
+      "HTML emails",
+      "Fintech",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Boston Ivy",
+      "IG Index"
+    ]
+  },
+  {
+    "id": "brian-lock-music",
+    "featured": false,
+    "nav": "Brian Lock Music",
+    "title": "Brian Lock Music",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "Brian Lock Music - mobile version"
+      },
+      {
+        "imgref": "",
+        "imgalt": "Brian Lock Music - desktop version"
+      }
+    ],
+    "body": [
+      "Brian Lock is an internationally renowned composer who has had success both in the UK and abroad.",
+      "He approached me to design and develop a new version of his website, and we decided that WordPress would be the best way forward, so I chose an existing template and adapted it to Brian's requirements.",
+      "Part of his specification was to include the option for multiple languages due to the success of his work in France and Poland, and also a live Twitter feed."
+    ],
+    "links": [
+      {
+        "link": "http://brianlockmusic.com/",
+        "label": "Brian Lock Music"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Twitter",
+      "Design",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Brian Lock Music"
+    ]
+  },
+  {
+    "id": "cascades",
+    "featured": false,
+    "nav": "The Cascades",
+    "title": "The Cascades",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "The Cascades NW3 - mobile version"
+      },
+      {
+        "imgref": "",
+        "imgalt": "The Cascades NW3 - desktop version"
+      },
+      {
+        "imgref": "",
+        "imgalt": "The Cascades NW3 - apartment page - desktop version"
+      }
+    ],
+    "body": [
+      "Based on layouts provided by Philosophy Design in London, and built using WordPress and Bootstrap.",
+      "The client specified that they needed a way to switch views between the photo map and layout blueprints on each apartment page."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "The Cascades"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "Bootstrap",
+      "Philosophy Design",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "jQuery",
+      "The Cascades",
+      "Bootstrap"
+    ]
+  },
+  {
+    "id": "centtrip",
+    "featured": false,
+    "nav": "Centtrip",
+    "title": "Centtrip - Fintech website(s)",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "I was hired to build and update WordPress theme pages and static microsites, including integration of a Google form and map API."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Centtrip "
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Google API",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Microsites",
+      "Centttip",
+      "Fintech"
+    ]
+  },
+  {
+    "id": "direct-line",
+    "featured": false,
+    "nav": "Direct Line",
+    "title": "Direct Line Group",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "I was employed by Direct Line Group to work on the front-end of a new web app that is due to be rolled out. The new app is a single-page application built with AngularJS, and allows customers to be able to get an instant quote quickly and easily.",
+      "This role included testing and debugging the app, adding and amending Angular content, and making html and css changes where necessary. The team had created an adaptive design approach, so I was working on separate mobile and desktop versions.",
+      "I also helped create, debug, and test mobile versions of the other differently branded incarnations of the app; Churchill, Privilege and Green flag.",
+      "I am unable to provide any screenshots or images of the project in question due to confidentiality and non-disclosure legalities."
+    ],
+    "tags": [
+      "Angular",
+      "Emails",
+      "HTML emails",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SPA",
+      "DLG",
+      "Direct Line Group"
+    ]
+  },
+  {
+    "id": "everest",
+    "featured": false,
+    "nav": "Everest Infographic",
+    "title": "Everest - Interactive House Infographic ",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "An animated infographic for The Telegraph advertorial team 'Spark' using React, uploaded via AEM, and featuring interactive hotspots and a special UI adapted to work on mobile as well as tablet/desktop."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/property/home-improvement-tips/what-makes-house-a-home/",
+        "label": "Everest - Interactive House Infographic for The Telegraph"
+      }
+    ],
+    "tags": [
+      "React",
+      "AEM",
+      "Infographics",
+      "Everest",
+      "Telegraph",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "evolution-of-music",
+    "featured": false,
+    "nav": "Evolution of Music",
+    "title": "Evolution of Music - a series of interactive long-forms for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A total of seven long-forms were built in VueJS for The Telegraph advertorial team 'Spark', one for each genre of music covered."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/blues/",
+        "label": "Evolution of Music 1/7 - Blues"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "AEM",
+      "Telegraph",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "expert-women-project",
+    "featured": false,
+    "nav": "Expert Women Project",
+    "title": "Expert Women Project",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "The City University of London commissioned me to design and build a website, the purpose of which was to chart the presence of expert women within the fields of journalism and broadcasting. It is a repository of research and academic articles, spearheaded by Professor Emeritus Lis Howell.",
+      "I chose WordPress for the fact that multiple users would be contributing to the content of the site, including blog entries and other regular updates."
+    ],
+    "links": [
+      {
+        "link": "https://expertwomenproject.com/",
+        "label": "Expert Women Project - kuve site"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Design",
+      "City University of London",
+      "Expert Women Project",
+      "Professor Lis Howell"
+    ]
+  },
+  {
+    "id": "fury-cs",
+    "featured": false,
+    "nav": "Fury CS",
+    "title": "Fury Creative Services (Seattle)",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "I was commissioned to rebuild and replatform the portfolio site for Fury Creative Services, based in Seattle. The intention was to reduce load times and overall peformance, while making the site responsive and quick to navigate.",
+      "I chose to replace the previous templated html site with a React build, which resulted in bringing the overall size down from 181mb to just under 9mb. In addition to optimisation and accessibility improvements, I also added a responsive layout and navigation, along with an image gallery feature.",
+      "I hosted the web app on Netlify for the client to test and verify, using the benefit of CI/CD via Github, before providing the finshed bundled files that she was able to upload easily to her own server."
+    ],
+    "links": [
+      {
+        "link": "https://www.furycs.com",
+        "label": "Fury Creative Services - Live site"
+      },
+      {
+        "link": "https://furycs-staging-33d46b.netlify.app/",
+        "label": "Fury Creative Services - Staging"
+      }
+    ],
+    "tags": [
+      "React",
+      "SPA",
+      "Netlify",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Fury CS",
+      "Fury Creative Services"
+    ]
+  },
+  {
+    "id": "invenias",
+    "featured": false,
+    "nav": "Invenias",
+    "title": "Invenias",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "Invenias - mobile version"
+      },
+      {
+        "imgref": "",
+        "imgalt": "Invenias - desktop version"
+      }
+    ],
+    "body": [
+      "Invenias is the world’s fastest growing provider of software solutions to the executive search and strategic recruitment sector.",
+      "A WordPress build, with the added challenge of multiple drop-down menus on the desktop view that incorporated forms and other functionality."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Invenias"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Invenias",
+      "Mega menu",
+      "Philosophy Design",
+      "Design",
+      "UI"
+    ]
+  },
+  {
+    "id": "ireland-tourism",
+    "featured": false,
+    "nav": "Ireland Tourism",
+    "title": "Culture, Lore and Legends - Interactive long-form piece for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A long-form advertorial piece involving an animation and scrolling parallax features.",
+      "It was specified by the designer that some visual elements animated in specific timed ways when they entered the viewport, in addition to the usual parallax elements which are a common feature for many of the long-form articles I built."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/indulge-in-ireland/culture-lore-and-legends/",
+        "label": "Culture, Lore and Legends - Interactive, responsive long form advertorial"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "Infographics",
+      "AEM",
+      "Telegraph",
+      "Ireland Tourism",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation"
+    ]
+  },
+  {
+    "id": "kino-design",
+    "featured": false,
+    "nav": "Kino Design",
+    "title": "Kino Design",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "Kino Design"
+      }
+    ],
+    "body": [
+      "Kino Design was the agency involved in a regular series of development projects based in USA (NDA agreement in place); web pages and custom HTML emails for a major tech company based in California.",
+      "I was flown to San Jose for the three-week assignment, during which accommodation and food was provided for the duration of the contract."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Kino Design"
+      }
+    ],
+    "tags": [
+      "MJML",
+      "Grunt",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "USA",
+      "Kino Design",
+      "HTML emails"
+    ]
+  },
+  {
+    "id": "lebara",
+    "featured": false,
+    "nav": "Lebara Mobile",
+    "title": "Lebara Mobile - London-based MVNO",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Award-winnng MVNO (Mobile Virtual Network Operator) Lebara brought me in to primarily work on UX and build a responsive prototype for the mobile versions of their popular websites - of which there were eight, globally.",
+      "The primary problem to overcome was the lack of brand continuity between the existing mobile and desktop sites. Using php, I built a responsive prototype on my own server, with view to consolidating both experiences and refining the existing customer journeys. The sim card topping-up process and various purchase journeys were made simpler in the process.",
+      "Using web analytics and heat-map tool MouseFlow, we invited a number of employees from Customer Services to click through the various journeys. The CS team were prime candidates for this due to their experience talking to customers and helping them navigate various online functions.",
+      "With their permission, I filmed their interaction with the mobile prototype, which helped give me a clearer picture of how the different journeys took place in real-life scenarios. I then took that data and feedback and applied it to the finished model.",
+      "This prototype allowed navigation testing for all the primary customer journeys, including sign up, top-up, and acquire new SIM card.",
+      "Ultimately, the code from my prototype was implemented onto the m-site, with view to creating a more unified web experience further down the line.",
+      "Due to the sleeker and more intuitive UX, online profits from the new rolled out m-site almost doubled within a few weeks of going live."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Lebara Mobile"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Emails",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Lebara",
+      "UX",
+      "UI",
+      "AB Testing",
+      "A/B Testing"
+    ]
+  },
+  {
+    "id": "mccann",
+    "featured": false,
+    "nav": "McCann Health",
+    "title": "McCann Health Medical Communications",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "McCann Health Medical Communications hired me to build the 2D version of a planned 3D Unity build for a series of virtual conferences. I used a blank WordPress template and built out the pages and content based on the designs provided, including navigation, page components, Advanced Custom Field (ACF) content where necessary. A plugin was then added which enabled the creation of API endpoints in a JSON format, which in turn informed the 3D Unity build of the content to be shown.",
+      "This WordPress template was customised and branded as required for the various conferences that were to follow.",
+      "I also built an interactive map component using a SVG with multiple paths referencing a separate JSON file, enabling the statistical data for each state to be displayed on hover, including a matching colour reference for that state depending on the figure represented. I also included the functionality to be able to switch between three versions of the same map."
+    ],
+    "links": [
+      {
+        "link": "https://112020.hallsofscience.com/2d/",
+        "label": "The Halls of Science virtual conference - 2D version"
+      },
+      {
+        "link": "https://112020.hallsofscience.com/impact-of-cvd/impact-of-cvd-in-usa/",
+        "label": "Halls of Science: Impact of CVD - interactive map"
+      }
+    ],
+    "tags": [
+      "WordPress",
+      "PHP",
+      "Infographics",
+      "McCann Health Medical Communications",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "mission-housing",
+    "featured": false,
+    "nav": "Mission Housing",
+    "title": "Mission Housing",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Mission Housing is a charity that aims to provide housing support and counsellors to support the needs of London’s diverse population. They reach out to the young and elderly, employed and unemployed, those with physical or mental health issues and addictions, the homeless, refugees and recent immigrants.",
+      "It was decided that it wasn’t possible to implement a CMS due to time and budget constraints, so I used a combination of jQuery and Bootstrap to display the static pages."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Mission Housing"
+      }
+    ],
+    "tags": [
+      "Bootstrap",
+      "Mission Housing",
+      "jQuery",
+      "Philosophy Design",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "payment-card-solutions",
+    "featured": false,
+    "nav": "Payment Card Solutions",
+    "title": "Payment Card Solutions",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": "Payment Card Solutions - mobile layout concept"
+      },
+      {
+        "imgref": "",
+        "imgalt": "Payment Card Solutions - desktop layout concept"
+      }
+    ],
+    "body": [
+      "PaymentCardSolutions.com provided prepaid cards and services for a number of popular brands who specialise in global money transfers and other financial solutions.",
+      "A site redesign was required for their Bread Card product, so I was brought in to revamp the brand's online presence, focusing on a simple layout with impactful visuals and an easy to navigate UI."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Payment Card Solutions"
+      }
+    ],
+    "tags": [
+      "Design",
+      "Payment Card Solutions",
+      "Fintech",
+      "UX"]
+  },
+  {
+    "id": "princess-cruises",
+    "featured": false,
+    "nav": "Princess Cruises",
+    "title": "Princess Cruises - Interactive long-form piece for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A long form advertorial piece involving animation, video, hotspots, and infographics.",
+      "The challenge here was to create performant, looping wave and boat animations. There are many ways of achieving this but for simplicity, I implemented the popular JavaScript animation library <a href='https://www.greensock.com' target='_blank'>GreenSock</a>."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/cruises/remarkable-moments/life-on-board/",
+        "label": "Princess Cruises - Interactive, responsive long form advertorial"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "Infographics",
+      "AEM",
+      "Telegraph",
+      "Princess Cruises",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation",
+      "Video"
+    ]
+  },
+  {
+    "id": "simplestream",
+    "featured": false,
+    "nav": "SimpleStream",
+    "title": "SimpleStream - Streaming Media",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Simplestream are a VOD supplier for multiple sites. My responsibilities included building and maintaining responsive UI and functionality based on supplied layouts and wireframes, visual asset editing, and some back-end API integration for sites such as NWSL Soccer and Marquee Arts."
+    ],
+    "links": [
+      {
+        "link": "https://www.simplestream.com",
+        "label": "Simplestream website"
+      }
+    ],
+    "tags": [
+      "PHP",
+      "SimpleStream",
+      "API",
+      "HTML",
+      "CSS",
+      "JavaScript"]
+  },
+  {
+    "id": "singapore-airlines",
+    "featured": false,
+    "nav": "Singapore Airlines",
+    "title": "Singapore Airlines - Interactive long-form piece for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A long form advertorial piece involving an animated infographic with hotspots and scrolling features."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/travel/icons-of-the-sky/why-fly-with-singapore-airlines/",
+        "label": "Singapore Airlines - Interactive, responsive long form advertorial"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "Infographics",
+      "AEM",
+      "Telegraph",
+      "Singapore Airlines",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation"
+    ]
+  },
+  {
+    "id": "soapy-business",
+    "featured": false,
+    "nav": "Soapy Business",
+    "title": "Soapy Business - Online store",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "I was commissioned to design and build an online store for a US-based business, who up until that point had been selling at local farmers' markets and advertising using social media as an advertising tool.",
+      "WorPress with WooCommerce was decided upon as the best solution, enabling the business owner and staff to update and amend products and stock levels as and when necessary."
+    ],
+    "links": [
+      {
+        "link": "https://soapybusiness.com",
+        "label": "Soapy Business online store"
+      }
+    ],
+    "tags": [
+      "eCommerce",
+      "WordPress",
+      "PHP",
+      "Soapy Business",
+      "WooCommerce",
+      "Design",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": "Treasure8",
+    "featured": false,
+    "nav": "Treasure8",
+    "title": "Iter8 by Treasure8- Interactive web app",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "Treasure8 is a San Francisco-based food innovation and technology company whose goal is to solve the nutritional challenges and environmental stresses of a growing global population.",
+      "I was commissioned to build a simple web app, designed for use primarily for tablets, that presented users with a quick and ergonomic interface, allowing them to take quick surveys and offer feedback on specific food products.",
+      "The final framework was built with jQuery Mobile to the client’s design specifications."
+    ],
+    "links": [
+      {
+        "link": "http://www.iter8.treasure8.com/home",
+        "label": "Iter8 by Treasure8 web app"
+      }
+    ],
+    "tags": [
+      "jQuery Mobile",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation",
+      "Treasure8",
+      "Iter8"
+    ]
+  },
+  {
+    "id": "yorkshire-bank",
+    "featured": false,
+    "nav": "Yorkshire Bank",
+    "title": "Yorkshire Bank - AMP story on SMEs for The Telegraph",
+    "imgs": [
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      },
+      {
+        "imgref": "",
+        "imgalt": ""
+      }
+    ],
+    "body": [
+      "A Yorkshire Bank advertorial involving animation and scrolling parallax features."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/visual-stories/top-5-business-challenges-2019/",
+        "label": "Yorkshire Bank AMP story on SMEs in 2019"
+      }
+    ],
+    "tags": [
+      "Infographics",
+      "AEM",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Yorkshire Bank",
+      "Telegraph",
+      "Long Form"
+    ]
+  }
+]
