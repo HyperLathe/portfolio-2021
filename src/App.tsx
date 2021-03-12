@@ -5,7 +5,6 @@ import {lightTheme, darkTheme} from "./themes/themes";
 import './App.css';
 import NavList from "./components/NavList";
 import NavBurger from "./components/NavBurger";
-import LogoGraphic from "./img/logo.svg";
 
 const Main = styled.div `
   width: 100%;
@@ -29,7 +28,7 @@ const Header = styled.header`
 		}
 		@media screen and (min-width: 768px) {
 			border-bottom: 1px solid #b4b4b4;
-			height: 100px;
+			height: 75px;
 			display: flex;
 			justify-content: space-between;
 			position: relative;
@@ -75,13 +74,29 @@ const Nav = styled.nav`
 		margin-right: 0;
 		flex-direction: row;
 		align-items: flex-end;
-		height: 100px;
+		height: 100%;
 		padding: 0px;
 		width: auto;
 		transform: scaleX(1);
 		position: relative;
-			a:first-child {
-				margin-right: 10px;
+		justify-content: center;
+		align-items: center;
+			a {
+				width: 100px;
+				margin: 0;
+				padding: 0px 50px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-left: 1px solid #b4b4b4;
+					&:nth-child(2) {
+						border-right: 1px solid #b4b4b4;
+					}
+					&:hover {
+						background-color: ${({ theme }) => theme.logoBackground};
+						color: #ffffff;
+					}
 			}
 	}
 `;
@@ -95,7 +110,7 @@ const Logo = styled.h1`
 	width: 100%;
 	height: 100%;
 	color: transparent;
-	background: url('${LogoGraphic}') 45% 55% no-repeat ${({ theme }) => theme.logoBackground};
+	background: url('${({ theme }) => theme.logo}') 45% 55% no-repeat ${({ theme }) => theme.logoBackground};
 	background-size: 70%;
 	display: block;
 	@media screen and (min-width: 768px) {
@@ -104,9 +119,16 @@ const Logo = styled.h1`
 `;
 
 const DayNightButton = styled.button `
-	width: 20px;
-	height: 20px;
-
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url('${({ theme }) => theme.themeButton}') center center no-repeat;
+	background-size: 35px;
+	border: 0;
+	outline: none;
+		&:hover {
+			background-color: ${({ theme }) => theme.logoBackground};
+		}
 `;
 
 const Footer = styled.footer `
@@ -156,8 +178,8 @@ function App() {
 								return (<NavLink key={key} to={"/portfolio/" + value.id}>{value.nav}</NavLink>)
 							})}
 						</MobileExtraLinks> */}
-					</Nav>
 					<DayNightButton onClick={toggleTheme} />
+					</Nav>
         </Header>
         <NavList />
 				<Footer>© {displayYear} Hyperlathe Ltd</Footer>
