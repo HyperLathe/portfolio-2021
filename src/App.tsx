@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import {useState } from "react";
 import { Route, NavLink, BrowserRouter } from "react-router-dom";
 import styled, { ThemeProvider } from 'styled-components/macro';
-import {lightTheme, darkTheme} from "./themes/themes";
+import { lightTheme, darkTheme } from "./themes/themes";
 import './App.css';
-import NavList from "./components/NavList";
+
+import PortfolioData from './content/portfolio_content.json';
+
 import NavBurger from "./components/NavBurger";
 
-const Main = styled.div `
+import Home from "./pages/home";
+import Portfolio from "./pages/portfolio";
+import About from "./pages/about";
+import ProjectPage from "./pages/projectPage";
+
+const Main = styled.div`
   width: 100%;
   height: 100%;
 	transition: all 0.3s ease;
 	background: ${({ theme }) => theme.background};
+	position: relative;
 `;
 
 const Header = styled.header`
@@ -31,12 +39,29 @@ const Header = styled.header`
 			height: 75px;
 			display: flex;
 			justify-content: space-between;
-			position: relative;
 			box-shadow: none;
 			&.nav-open {
 				margin-left: 0;
 			}
 		}
+`;
+
+const Logo = styled.h1`
+	line-height: 0;
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	color: transparent;
+	background: url('${({ theme }) => theme.logo}') 45% 90% no-repeat ${({ theme }) => theme.logoBackground};
+	background-size: 150px;
+	display: block;
+	@media screen and (min-width: 768px) {
+		width: 200px;
+		background-position: 45% 70%;
+	}
 `;
 
 const Nav = styled.nav`
@@ -61,14 +86,11 @@ const Nav = styled.nav`
 	 a {
 			font-family: helvetica, arial, sans-serif;
 			text-transform: uppercase;
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			text-decoration: none;
-			color: #b4b4b4;
+			color: ${({ theme }) => theme.navText};
 			margin-bottom: 7px;
-				&:hover,
-				&.active {
-					color: #000;
-				}
+			transition: all 0.1s linear;
 	 }
 	@media screen and (min-width: 768px) {
 		margin-right: 0;
@@ -76,75 +98,105 @@ const Nav = styled.nav`
 		align-items: flex-end;
 		height: 100%;
 		padding: 0px;
-		width: auto;
+		width: 50%;
 		transform: scaleX(1);
 		position: relative;
-		justify-content: center;
 		align-items: center;
 			a {
-				width: 100px;
+				flex-grow: 1;
 				margin: 0;
-				padding: 0px 50px;
 				height: 100%;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				border-left: 1px solid #b4b4b4;
-					&:nth-child(2) {
+					&:nth-child(3) {
 						border-right: 1px solid #b4b4b4;
 					}
+					&.active {
+						color: ${({ theme }) => theme.navSelectedText};
+							&:hover {
+								color: ${({ theme }) => theme.navSelectedHoverText};
+							}
+							&:after {
+								width: 0; 
+								height: 0; 
+								border-left: 20px solid transparent;
+								border-right: 20px solid transparent;
+								border-top: 8px solid ${({ theme }) => theme.navSelectedArrow};
+								content: '';
+								display: block;
+								position: absolute;
+								margin-bottom: -28px;
+							}
+					}
 					&:hover {
-						background-color: ${({ theme }) => theme.logoBackground};
-						color: #ffffff;
+						color: ${({ theme }) => theme.navHoverText};
+						background: ${({ theme }) => theme.navHoverBackground};
 					}
 			}
 	}
 `;
 
-const Logo = styled.h1`
-	line-height: 0;
-	font-size: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	color: transparent;
-	background: url('${({ theme }) => theme.logo}') 45% 55% no-repeat ${({ theme }) => theme.logoBackground};
-	background-size: 70%;
-	display: block;
-	@media screen and (min-width: 768px) {
-		width: 200px;
-	}
-`;
-
-const DayNightButton = styled.button `
-	width: 100%;
+const DayNightButton = styled.button`
+	width: 75px;
 	height: 100%;
 	display: block;
 	background: url('${({ theme }) => theme.themeButton}') center center no-repeat;
-	background-size: 35px;
+	background-size: 30px;
 	border: 0;
 	outline: none;
+	cursor: pointer;
 		&:hover {
 			background-color: ${({ theme }) => theme.logoBackground};
 		}
 `;
 
-const Footer = styled.footer `
+
+const Content = styled.div`
+	width: 100%;
+	padding: 70px 0px 10px 0px;
+	height: 100%;
+	min-height: 100vh;
+	@media screen and (min-width: 768px) {
+		height: 100%;
+		padding: 105px 0px 80px 0px;
+	}
+`;
+
+const Footer = styled.footer`
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 20px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+  padding: 0px 30px;
+	border-top: 1px solid #b4b4b4;
 	background: ${({ theme }) => theme.background};
 	color: ${({ theme }) => theme.textColor};
 `;
 
+interface Ilink {
+	link: string;
+	label: string;
+}
+
+interface Project {
+  id: string;
+  featured: boolean;
+	nav: string;
+	title: string;
+	imgs: number;
+	body: string[];
+	links: Array<Ilink>;
+	tags: string[];
+}
 
 
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 	const closeNav = () => {
 		return (isOpen ? setIsOpen(false) : '');
@@ -159,34 +211,49 @@ function App() {
 		}
 	}
 
-
 	const displayYear = new Date().getFullYear();
+	
 
-  return (
+	return (
 		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-    <BrowserRouter>
-      <Main>
-        <Header onClick={closeNav} className={isOpen ? 'nav-open' : ''}>
-					<NavBurger isOpen={isOpen} toggle={toggle} />
-					<NavLink exact to="/"><Logo>Hyperlathe</Logo></NavLink>
-					<Nav onClick={toggle} className={isOpen ? 'nav-open' : ''}>
-					<NavLink exact to="/portfolio">Portfolio</NavLink>
-					<NavLink exact to="/about">About</NavLink>
-					{/* <MobileExtraLinks onClick={toggle}>
+			<BrowserRouter>
+				<Main>
+					<Header onClick={closeNav} className={isOpen ? 'nav-open' : ''}>
+						<NavBurger isOpen={isOpen} toggle={toggle} />
+						<NavLink exact to="/"><Logo>Hyperlathe</Logo></NavLink>
+						<Nav onClick={toggle} className={isOpen ? 'nav-open' : ''}>
+							<NavLink exact to="/" title='Home'>Home</NavLink>
+							<NavLink exact to="/portfolio" title='Portfolio'>Portfolio</NavLink>
+							<NavLink exact to="/about" title='About'>About</NavLink>
+							{/* <MobileExtraLinks onClick={toggle}>
 							<p>portfolio:</p>
 							{Object.entries(PortfolioData).map(([key, value]) => {
 								return (<NavLink key={key} to={"/portfolio/" + value.id}>{value.nav}</NavLink>)
 							})}
 						</MobileExtraLinks> */}
-					<DayNightButton onClick={toggleTheme} />
-					</Nav>
-        </Header>
-        <NavList />
-				<Footer>© {displayYear} Hyperlathe Ltd</Footer>
-      </Main>
-    </BrowserRouter>
+							<DayNightButton onClick={toggleTheme} title='Toggle light / dark mode' />
+						</Nav>
+					</Header>
+					<Content onClick={closeNav}>
+						<Route exact path="/" component={Home} />
+						<Route exact path="/about" component={About} />
+						<Route exact path="/portfolio" component={Portfolio} />
+
+
+						{Object.entries(PortfolioData).map(([key, value]) => {
+        			//  return (<Route key={key} path={"/portfolio/" + value.id} component={ProjectPage} {...value} />)
+
+							return (<Route key={key} path={"/portfolio/" + value.id} component={(props: any) => <ProjectPage {...props} />} />)
+
+      			}
+						)}
+						
+					</Content>
+					 <Footer>© {displayYear} Hyperlathe Ltd</Footer>
+				</Main>
+			</BrowserRouter>
 		</ThemeProvider>
-  );
+	);
 }
 
 export default App;

@@ -4,20 +4,7 @@
     "featured": false,
     "nav": "Australian Restaurants",
     "title": "Etihad Australian Restaurant long-form - Interactive advertorial for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "An interactive advertorial involving animation, scrolling parallax features, and a video component.",
       "For the video element I used JavaScript to customise the appearance and function of the start/stop control, and then used Adobe After Effects to stabilise and optimise the source video itself."
@@ -47,20 +34,7 @@
     "featured": false,
     "nav": "Australian Tourism",
     "title": "Australian Tourism long-forms - Interactive advertorials for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A series of four long-form advertorial pieces involving animation and scrolling parallax features.",
       "Challenges involved building various selectable gallery elements, including an interactive events calendar and profile components, that all had to look and function perfectly on all viewports."
@@ -88,20 +62,7 @@
     "featured": false,
     "nav": "Before the Tour",
     "title": "Before the Tour",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Beforethetour.com was a site designed to promote Le Tour - One Day Ahead; a way for cycling enthusiasts to experience the route of the famous Tour de France a day ahead of the main event. The organisers promote a package for participants including travel, meals, accommodation etc.",
       "This was another project designed by Philosophy Design in London, and built by me as a single-page responsive site using Bootstrap, with some jQuery for functionality. They also requested the implementation of a customised Twitter feed and contact form."
@@ -130,16 +91,7 @@
     "featured": false,
     "nav": "Boeing",
     "title": "Boeing",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "Boeing P-8A Infographic - Desktop"
-      },
-      {
-        "imgref": "",
-        "imgalt": "Boeing P-8A Infographic - Mobile"
-      }
-    ],
+    "imgs": 2,
     "body": [
       "An animated interactive infographic built with VueJS, designed to showcase the interior if the Boeing P-8A Poseidon Maritime Patrol Aircraft.",
       "Special consideration was required to ensure the functionality worked equally well on mobile as well as desktop."
@@ -166,20 +118,7 @@
     "featured": false,
     "nav": "Boston Ivy",
     "title": "Boston Ivy - gTLD Brokers",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Boston Ivy was a FTSE 250-backed company that provided specialised website domain extensions in the financial services sector.",
       "I was brought in to design and build a number of projects, including a rebuild of bostonivy.co from the ground up, and a number of financial service sites, utilising WordPress/PHP. I also built working prototypes, including a working mockup of the Boston Ivy site.",
@@ -211,16 +150,7 @@
     "featured": false,
     "nav": "Brian Lock Music",
     "title": "Brian Lock Music",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "Brian Lock Music - mobile version"
-      },
-      {
-        "imgref": "",
-        "imgalt": "Brian Lock Music - desktop version"
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Brian Lock is an internationally renowned composer who has had success both in the UK and abroad.",
       "He approached me to design and develop a new version of his website, and we decided that WordPress would be the best way forward, so I chose an existing template and adapted it to Brian's requirements.",
@@ -248,20 +178,7 @@
     "featured": false,
     "nav": "The Cascades",
     "title": "The Cascades",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "The Cascades NW3 - mobile version"
-      },
-      {
-        "imgref": "",
-        "imgalt": "The Cascades NW3 - desktop version"
-      },
-      {
-        "imgref": "",
-        "imgalt": "The Cascades NW3 - apartment page - desktop version"
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Based on layouts provided by Philosophy Design in London, and built using WordPress and Bootstrap.",
       "The client specified that they needed a way to switch views between the photo map and layout blueprints on each apartment page."
@@ -290,20 +207,7 @@
     "featured": false,
     "nav": "Centtrip",
     "title": "Centtrip - Fintech website(s)",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "I was hired to build and update WordPress theme pages and static microsites, including integration of a Google form and map API."
     ],
@@ -330,20 +234,7 @@
     "featured": false,
     "nav": "Direct Line",
     "title": "Direct Line Group",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "I was employed by Direct Line Group to work on the front-end of a new web app that is due to be rolled out. The new app is a single-page application built with AngularJS, and allows customers to be able to get an instant quote quickly and easily.",
       "This role included testing and debugging the app, adding and amending Angular content, and making html and css changes where necessary. The team had created an adaptive design approach, so I was working on separate mobile and desktop versions.",
@@ -367,20 +258,7 @@
     "featured": false,
     "nav": "Everest Infographic",
     "title": "Everest - Interactive House Infographic ",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "An animated infographic for The Telegraph advertorial team 'Spark' using React, uploaded via AEM, and featuring interactive hotspots and a special UI adapted to work on mobile as well as tablet/desktop."
     ],
@@ -406,20 +284,7 @@
     "featured": false,
     "nav": "Evolution of Music",
     "title": "Evolution of Music - a series of interactive long-forms for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A total of seven long-forms were built in VueJS for The Telegraph advertorial team 'Spark', one for each genre of music covered."
     ],
@@ -443,20 +308,7 @@
     "featured": false,
     "nav": "Expert Women Project",
     "title": "Expert Women Project",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "The City University of London commissioned me to design and build a website, the purpose of which was to chart the presence of expert women within the fields of journalism and broadcasting. It is a repository of research and academic articles, spearheaded by Professor Emeritus Lis Howell.",
       "I chose WordPress for the fact that multiple users would be contributing to the content of the site, including blog entries and other regular updates."
@@ -484,20 +336,7 @@
     "featured": false,
     "nav": "Fury CS",
     "title": "Fury Creative Services (Seattle)",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "I was commissioned to rebuild and replatform the portfolio site for Fury Creative Services, based in Seattle. The intention was to reduce load times and overall peformance, while making the site responsive and quick to navigate.",
       "I chose to replace the previous templated html site with a React build, which resulted in bringing the overall size down from 181mb to just under 9mb. In addition to optimisation and accessibility improvements, I also added a responsive layout and navigation, along with an image gallery feature.",
@@ -529,16 +368,7 @@
     "featured": false,
     "nav": "Invenias",
     "title": "Invenias",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "Invenias - mobile version"
-      },
-      {
-        "imgref": "",
-        "imgalt": "Invenias - desktop version"
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Invenias is the world’s fastest growing provider of software solutions to the executive search and strategic recruitment sector.",
       "A WordPress build, with the added challenge of multiple drop-down menus on the desktop view that incorporated forms and other functionality."
@@ -567,20 +397,7 @@
     "featured": false,
     "nav": "Ireland Tourism",
     "title": "Culture, Lore and Legends - Interactive long-form piece for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A long-form advertorial piece involving an animation and scrolling parallax features.",
       "It was specified by the designer that some visual elements animated in specific timed ways when they entered the viewport, in addition to the usual parallax elements which are a common feature for many of the long-form articles I built."
@@ -609,12 +426,7 @@
     "featured": false,
     "nav": "Kino Design",
     "title": "Kino Design",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "Kino Design"
-      }
-    ],
+    "imgs": 0,
     "body": [
       "Kino Design was the agency involved in a regular series of development projects based in USA (NDA agreement in place); web pages and custom HTML emails for a major tech company based in California.",
       "I was flown to San Jose for the three-week assignment, during which accommodation and food was provided for the duration of the contract."
@@ -641,20 +453,7 @@
     "featured": false,
     "nav": "Lebara Mobile",
     "title": "Lebara Mobile - London-based MVNO",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Award-winnng MVNO (Mobile Virtual Network Operator) Lebara brought me in to primarily work on UX and build a responsive prototype for the mobile versions of their popular websites - of which there were eight, globally.",
       "The primary problem to overcome was the lack of brand continuity between the existing mobile and desktop sites. Using php, I built a responsive prototype on my own server, with view to consolidating both experiences and refining the existing customer journeys. The sim card topping-up process and various purchase journeys were made simpler in the process.",
@@ -689,20 +488,7 @@
     "featured": false,
     "nav": "McCann Health",
     "title": "McCann Health Medical Communications",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "McCann Health Medical Communications hired me to build the 2D version of a planned 3D Unity build for a series of virtual conferences. I used a blank WordPress template and built out the pages and content based on the designs provided, including navigation, page components, Advanced Custom Field (ACF) content where necessary. A plugin was then added which enabled the creation of API endpoints in a JSON format, which in turn informed the 3D Unity build of the content to be shown.",
       "This WordPress template was customised and branded as required for the various conferences that were to follow.",
@@ -733,12 +519,7 @@
     "featured": false,
     "nav": "Mission Housing",
     "title": "Mission Housing",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Mission Housing is a charity that aims to provide housing support and counsellors to support the needs of London’s diverse population. They reach out to the young and elderly, employed and unemployed, those with physical or mental health issues and addictions, the homeless, refugees and recent immigrants.",
       "It was decided that it wasn’t possible to implement a CMS due to time and budget constraints, so I used a combination of jQuery and Bootstrap to display the static pages."
@@ -764,16 +545,7 @@
     "featured": false,
     "nav": "Payment Card Solutions",
     "title": "Payment Card Solutions",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": "Payment Card Solutions - mobile layout concept"
-      },
-      {
-        "imgref": "",
-        "imgalt": "Payment Card Solutions - desktop layout concept"
-      }
-    ],
+    "imgs": 2,
     "body": [
       "PaymentCardSolutions.com provided prepaid cards and services for a number of popular brands who specialise in global money transfers and other financial solutions.",
       "A site redesign was required for their Bread Card product, so I was brought in to revamp the brand's online presence, focusing on a simple layout with impactful visuals and an easy to navigate UI."
@@ -795,20 +567,7 @@
     "featured": false,
     "nav": "Princess Cruises",
     "title": "Princess Cruises - Interactive long-form piece for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A long form advertorial piece involving animation, video, hotspots, and infographics.",
       "The challenge here was to create performant, looping wave and boat animations. There are many ways of achieving this but for simplicity, I implemented the popular JavaScript animation library <a href='https://www.greensock.com' target='_blank'>GreenSock</a>."
@@ -838,20 +597,7 @@
     "featured": false,
     "nav": "SimpleStream",
     "title": "SimpleStream - Streaming Media",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Simplestream are a VOD supplier for multiple sites. My responsibilities included building and maintaining responsive UI and functionality based on supplied layouts and wireframes, visual asset editing, and some back-end API integration for sites such as NWSL Soccer and Marquee Arts."
     ],
@@ -874,20 +620,7 @@
     "featured": false,
     "nav": "Singapore Airlines",
     "title": "Singapore Airlines - Interactive long-form piece for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A long form advertorial piece involving an animated infographic with hotspots and scrolling features."
     ],
@@ -915,20 +648,7 @@
     "featured": false,
     "nav": "Soapy Business",
     "title": "Soapy Business - Online store",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "I was commissioned to design and build an online store for a US-based business, who up until that point had been selling at local farmers' markets and advertising using social media as an advertising tool.",
       "WorPress with WooCommerce was decided upon as the best solution, enabling the business owner and staff to update and amend products and stock levels as and when necessary."
@@ -956,20 +676,7 @@
     "featured": false,
     "nav": "Treasure8",
     "title": "Iter8 by Treasure8- Interactive web app",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "Treasure8 is a San Francisco-based food innovation and technology company whose goal is to solve the nutritional challenges and environmental stresses of a growing global population.",
       "I was commissioned to build a simple web app, designed for use primarily for tablets, that presented users with a quick and ergonomic interface, allowing them to take quick surveys and offer feedback on specific food products.",
@@ -996,20 +703,7 @@
     "featured": false,
     "nav": "Yorkshire Bank",
     "title": "Yorkshire Bank - AMP story on SMEs for The Telegraph",
-    "imgs": [
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      },
-      {
-        "imgref": "",
-        "imgalt": ""
-      }
-    ],
+    "imgs": 2,
     "body": [
       "A Yorkshire Bank advertorial involving animation and scrolling parallax features."
     ],

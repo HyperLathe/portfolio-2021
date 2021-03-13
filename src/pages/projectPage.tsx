@@ -1,5 +1,5 @@
+import { prototype } from "stream";
 import styled from "styled-components/macro";
-import NavList from "../components/NavList";
 
 const Content = styled.div `
   img {
@@ -44,14 +44,15 @@ const Links = styled.div `
    }
 `;
 
-
-function Portfolio() {
+function projectPage({...props}) {
+  console.log(props)
   return (
     <Content>
-      <h2>Portfolio Content, yo</h2>
-      <NavList />
+      <p>Project content yo</p>
+      <h2>{props.title}</h2>
+      
     </Content>
   );
 }
 
-export default Portfolio;
+export default projectPage;

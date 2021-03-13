@@ -9,7 +9,12 @@ export const lightTheme = {
   logo: LogoGraphic,
   themeButton: Moon,
   logoBackground: "#3dc0dc",
-  hoverBackground: "#3dc0dc",
+  navText: "#808080",
+  navHoverBackground: "#3dc0dc",
+  navHoverText: "#ffffff",
+  navSelectedText: "#000000",
+  navHoverSelectedText: "#ffffff",
+  navSelectedArrow: "#3dc0dc",
   textColor: "#282828",
   buttonColor: "#b4b4b4"
 }
@@ -20,7 +25,12 @@ export const darkTheme = {
   logo: LogoGraphicDark,
   themeButton: Sun,
   logoBackground: "#0e6779",
-  hoverBackground: "#0e6779",
-  textColor: "#FFFFFF",
+  navText: "#b4b4b4",
+  navHoverBackground: "#0e6779",
+  navHoverText: "#ffffff",
+  navSelectedText: "#ffffff",
+  navHoverSelectedText: "#ffffff",
+  navSelectedArrow: "#0e6779",
+  textColor: "#ffffff",
   buttonColor: "#086980"
 }
