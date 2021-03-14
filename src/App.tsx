@@ -19,6 +19,21 @@ const Main = styled.div`
 	transition: all 0.3s ease;
 	background: ${({ theme }) => theme.background};
 	position: relative;
+    &.nav-open {
+			/* transform: translateX(-200px); */
+			margin: 0px 0px 0px -200px;
+			padding-right: 215px;
+		}
+		@media screen and (min-width: 768px) {
+			margin: 0px auto;
+			max-width: 100%;
+			position: relative;
+			&.nav-open {
+				/* transform: translateX(0); */
+				margin: 0px auto;
+				padding-right: 0px;
+			}
+		}
 `;
 
 const Header = styled.header`
@@ -73,15 +88,19 @@ const Nav = styled.nav`
 	padding: 20px;
 	width: 200px;
 	height: 100%;
+	min-height: 100vh;
 	margin-right: -200px;
 	text-align: right;
-	transition: all 0.4s ease;
 	display: flex;
 	flex-direction: column;
 	transform: scaleX(0);
 	transform-origin: right;
+	transition: all 0.3s ease;
+	overflow-y: scroll;
+	background: ${({ theme }) => theme.background};
 		&.nav-open {
 			transform: scaleX(1);
+	transition: all 0s ease;
 			}
 	 a {
 			font-family: helvetica, arial, sans-serif;
@@ -97,6 +116,8 @@ const Nav = styled.nav`
 		flex-direction: row;
 		align-items: flex-end;
 		height: 100%;
+		min-height: auto;
+		overflow: initial;
 		padding: 0px;
 		width: 50%;
 		transform: scaleX(1);
@@ -152,15 +173,33 @@ const DayNightButton = styled.button`
 		}
 `;
 
+const MobileExtraLinks = styled.div`
+	display: flex;
+	flex-direction: column;
+	color: ${({ theme }) => theme.navText};
+		p {
+			margin: 15px 0px 7px 0px;
+			font-size: 0.8rem;
+		}
+		a {
+			font-size: 0.8rem;
+		}
+		@media screen and (min-width: 768px) {
+			display: none;	
+	}
+`;
+
 
 const Content = styled.div`
-	width: 100%;
-	padding: 70px 0px 10px 0px;
+	width: 100vw;
+	padding: 70px 15px 10px 15px;
 	height: 100%;
 	min-height: 100vh;
 	@media screen and (min-width: 768px) {
 		height: 100%;
-		padding: 105px 0px 80px 0px;
+		padding: 105px 0 80px 0;
+    width: 50vw;
+    margin: 0px auto;
 	}
 `;
 
@@ -174,25 +213,8 @@ const Footer = styled.footer`
   padding: 0px 30px;
 	border-top: 1px solid #b4b4b4;
 	background: ${({ theme }) => theme.background};
-	color: ${({ theme }) => theme.textColor};
+	color: ${({ theme }) => theme.bodyText};
 `;
-
-interface Ilink {
-	link: string;
-	label: string;
-}
-
-interface Project {
-  id: string;
-  featured: boolean;
-	nav: string;
-	title: string;
-	imgs: number;
-	body: string[];
-	links: Array<Ilink>;
-	tags: string[];
-}
-
 
 function App() {
 
@@ -215,9 +237,9 @@ function App() {
 	
 
 	return (
-		<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+		<ThemeProvider theme={theme === 'dark' ? lightTheme : darkTheme}>
 			<BrowserRouter>
-				<Main>
+				<Main className={(isOpen ? 'nav-open' : '')}>
 					<Header onClick={closeNav} className={isOpen ? 'nav-open' : ''}>
 						<NavBurger isOpen={isOpen} toggle={toggle} />
 						<NavLink exact to="/"><Logo>Hyperlathe</Logo></NavLink>
@@ -225,12 +247,12 @@ function App() {
 							<NavLink exact to="/" title='Home'>Home</NavLink>
 							<NavLink exact to="/portfolio" title='Portfolio'>Portfolio</NavLink>
 							<NavLink exact to="/about" title='About'>About</NavLink>
-							{/* <MobileExtraLinks onClick={toggle}>
+							<MobileExtraLinks onClick={toggle}>
 							<p>portfolio:</p>
 							{Object.entries(PortfolioData).map(([key, value]) => {
 								return (<NavLink key={key} to={"/portfolio/" + value.id}>{value.nav}</NavLink>)
 							})}
-						</MobileExtraLinks> */}
+						</MobileExtraLinks>
 							<DayNightButton onClick={toggleTheme} title='Toggle light / dark mode' />
 						</Nav>
 					</Header>
@@ -239,12 +261,8 @@ function App() {
 						<Route exact path="/about" component={About} />
 						<Route exact path="/portfolio" component={Portfolio} />
 
-
 						{Object.entries(PortfolioData).map(([key, value]) => {
-        			//  return (<Route key={key} path={"/portfolio/" + value.id} component={ProjectPage} {...value} />)
-
-							return (<Route key={key} path={"/portfolio/" + value.id} component={(props: any) => <ProjectPage {...props} />} />)
-
+							return (<Route key={key} path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />} />)
       			}
 						)}
 						

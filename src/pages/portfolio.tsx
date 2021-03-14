@@ -11,14 +11,17 @@ const Content = styled.div `
     text-transform: uppercase;
     font-size: 1.1rem;
     margin: 10px 0px 5px 0px;
+    text-align: center;
+    color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1.5rem;
     }
   }
   p {
     margin: 5px 0px 20px 0px;
+    color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
   a {
@@ -28,7 +31,7 @@ const Content = styled.div `
         text-decoration: underline;
       }
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -48,7 +51,7 @@ const Links = styled.div `
 function Portfolio() {
   return (
     <Content>
-      <h2>Portfolio Content, yo</h2>
+      <h2>Portfolio</h2>
       <NavList />
     </Content>
   );

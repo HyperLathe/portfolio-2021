@@ -9,15 +9,29 @@ const Content = styled.div `
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.1rem;
-    margin: 10px 0px 5px 0px;
+    margin: 40px 0;
+    text-align: center;
+    color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1.5rem;
+    }
+  }
+  h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 10px 0px 5px 0px;
+    color: ${({ theme }) => theme.bodyText};
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
     }
   }
   p {
     margin: 5px 0px 20px 0px;
+    color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
   a {
@@ -27,7 +41,7 @@ const Content = styled.div `
         text-decoration: underline;
       }
     @media screen and (min-width: 768px) {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -47,15 +61,12 @@ const Links = styled.div `
 function Home() {
   return (
     <Content>
-      <h2>Home content, yo</h2>
-      {/* <img src={require('../img/' + PageContent.img)} alt="Jennifer Jacobs-Springer" />
-      <h2>{PageContent.headline1}</h2>
-      <p>{PageContent.content1}</p>
-      <h2>{PageContent.headline2}</h2>
-      <Links dangerouslySetInnerHTML={{ __html: PageContent.content2 }} />
-      <h2>{PageContent.headline3}</h2>
-      <Links dangerouslySetInnerHTML={{ __html: PageContent.content3 }} /> */}
-      
+      <h2>Richard Young: Front-end Developer</h2>
+      <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
+      <h3>Problem solving on both a macro and micro level</h3>
+      <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, jQuery, WordPress, image editing, asset creation &amp; optimising, video/audio editing.</p>
+      <h3>Featured projects:</h3>
+      <p>For a more comprehensive list please check out my <a href='/portfolio/'>portfolio</a>.</p>
     </Content>
   );
 }

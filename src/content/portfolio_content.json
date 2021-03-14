@@ -225,7 +225,7 @@
       "CSS",
       "JavaScript",
       "Microsites",
-      "Centttip",
+      "Centtrip",
       "Fintech"
     ]
   },
@@ -240,6 +240,12 @@
       "This role included testing and debugging the app, adding and amending Angular content, and making html and css changes where necessary. The team had created an adaptive design approach, so I was working on separate mobile and desktop versions.",
       "I also helped create, debug, and test mobile versions of the other differently branded incarnations of the app; Churchill, Privilege and Green flag.",
       "I am unable to provide any screenshots or images of the project in question due to confidentiality and non-disclosure legalities."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "Direct Line "
+      }
     ],
     "tags": [
       "Angular",

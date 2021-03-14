@@ -8,7 +8,7 @@ const NavListContainer = styled.div`
       display: flex;
       flex-direction: column;
         a {
-          font-size: 0.8rem;
+          font-size: 1rem;
           margin-bottom: 5px;
           text-decoration: none;
           color: #b4b4b4;
