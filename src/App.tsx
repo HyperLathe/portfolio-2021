@@ -198,7 +198,7 @@ const Content = styled.div`
 	@media screen and (min-width: 768px) {
 		height: 100%;
 		padding: 105px 0 80px 0;
-    width: 50vw;
+    width: 60vw;
     margin: 0px auto;
 	}
 `;
@@ -207,11 +207,12 @@ const Footer = styled.footer`
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 60px;
+	height: 35px;
 	display: flex;
 	align-items: center;
   padding: 0px 30px;
 	border-top: 1px solid #b4b4b4;
+	font-size: 0.8rem;
 	background: ${({ theme }) => theme.background};
 	color: ${({ theme }) => theme.bodyText};
 `;
@@ -257,7 +258,7 @@ function App() {
 						</Nav>
 					</Header>
 					<Content onClick={closeNav}>
-						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Home} {...PortfolioData} />
 						<Route exact path="/about" component={About} />
 						<Route exact path="/portfolio" component={Portfolio} />
 

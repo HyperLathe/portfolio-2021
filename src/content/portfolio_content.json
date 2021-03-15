@@ -33,7 +33,7 @@
     "id": "australian-tourism",
     "featured": false,
     "nav": "Australian Tourism",
-    "title": "Australian Tourism long-forms - Interactive advertorials for The Telegraph",
+    "title": "Australian Tourism long-forms - Interactive advertorials",
     "imgs": 2,
     "body": [
       "A series of four long-form advertorial pieces involving animation and scrolling parallax features.",
@@ -69,8 +69,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Before the Tour"
+        "link": "https://web.archive.org/web/20150319022523if_/http://www.beforethetour.com/",
+        "label": "Before the Tour (archived page)"
       }
     ],
     "tags": [
@@ -90,7 +90,7 @@
     "id": "boeing",
     "featured": false,
     "nav": "Boeing",
-    "title": "Boeing",
+    "title": "Boeing - animated, interactive infographic",
     "imgs": 2,
     "body": [
       "An animated interactive infographic built with VueJS, designed to showcase the interior if the Boeing P-8A Poseidon Maritime Patrol Aircraft.",
@@ -126,8 +126,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Boston Ivy "
+        "link": "https://web.archive.org/web/20150905134043if_/https://bostonivy.co/",
+        "label": "Boston Ivy (archived page)"
       }
     ],
     "tags": [
@@ -185,8 +185,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "The Cascades"
+        "link": "https://web.archive.org/web/20160713220335if_/http://thecascadesnw3.com:80/",
+        "label": "The Cascades (archived page)"
       }
     ],
     "tags": [
@@ -198,8 +198,7 @@
       "JavaScript",
       "PHP",
       "jQuery",
-      "The Cascades",
-      "Bootstrap"
+      "The Cascades"
     ]
   },
   {
@@ -209,12 +208,13 @@
     "title": "Centtrip - Fintech website(s)",
     "imgs": 2,
     "body": [
-      "I was hired to build and update WordPress theme pages and static microsites, including integration of a Google form and map API."
+      "I was hired to build and update WordPress theme pages and static microsites, including integration of a contact form and custom Google Map.",
+      "The initial challenge was to build the main Centtrip site on an empty Amazon bucket, with no server-side scripting (PHP etc.), so I has to build out the pages as static entities."
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Centtrip "
+        "link": "https://web.archive.org/web/20170407233531/https://www.centtrip.com/",
+        "label": "Centtrip (archived page)"
       }
     ],
     "tags": [
@@ -261,7 +261,7 @@
   },
   {
     "id": "everest",
-    "featured": false,
+    "featured": true,
     "nav": "Everest Infographic",
     "title": "Everest - Interactive House Infographic ",
     "imgs": 2,
@@ -322,7 +322,7 @@
     "links": [
       {
         "link": "https://expertwomenproject.com/",
-        "label": "Expert Women Project - kuve site"
+        "label": "Expert Women Project"
       }
     ],
     "tags": [
@@ -339,7 +339,7 @@
   },
   {
     "id": "fury-cs",
-    "featured": false,
+    "featured": true,
     "nav": "Fury CS",
     "title": "Fury Creative Services (Seattle)",
     "imgs": 2,
@@ -355,7 +355,7 @@
       },
       {
         "link": "https://furycs-staging-33d46b.netlify.app/",
-        "label": "Fury Creative Services - Staging"
+        "label": "Fury Creative Services - staging on Netlify"
       }
     ],
     "tags": [
@@ -381,8 +381,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Invenias"
+        "link": "https://web.archive.org/web/20150811053009if_/http://invenias.com/",
+        "label": "Invenias (archived page)"
       }
     ],
     "tags": [
@@ -411,7 +411,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/indulge-in-ireland/culture-lore-and-legends/",
-        "label": "Culture, Lore and Legends - Interactive, responsive long form advertorial"
+        "label": "Culture, Lore and Legends - long-form"
       }
     ],
     "tags": [
@@ -432,7 +432,7 @@
     "featured": false,
     "nav": "Kino Design",
     "title": "Kino Design",
-    "imgs": 0,
+    "imgs": 2,
     "body": [
       "Kino Design was the agency involved in a regular series of development projects based in USA (NDA agreement in place); web pages and custom HTML emails for a major tech company based in California.",
       "I was flown to San Jose for the three-week assignment, during which accommodation and food was provided for the duration of the contract."
@@ -471,8 +471,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Lebara Mobile"
+        "link": "https://web.archive.org/web/20131003173904if_/http://www.lebara.co.uk/",
+        "label": "Lebara Mobile (archived page)"
       }
     ],
     "tags": [
@@ -490,24 +490,53 @@
     ]
   },
   {
-    "id": "mccann",
+    "id": "the-mercy",
     "featured": false,
+    "nav": "The Mercy",
+    "title": "The Mercy - interactive long-form",
+    "imgs": 2,
+    "body": [
+      "I built a long-form interactive advertorial for the release of The Mercy starring Colin Firth and Rachel Weisz.",
+      "A number of different interactive elements were required, including an image gallery with selectable time-line, video elements, and various presentational animations."
+    ],
+    "links": [
+      {
+        "link": "https://www.telegraph.co.uk/films/the-mercy/ordinary-man-extraordinary-challenge/",
+        "label": "The Mercy - interactive long-form"
+      }
+    ],
+    "tags": [
+      "VueJS",
+      "Long Form",
+      "AEM",
+      "Telegraph",
+      "The Mercy",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animation",
+      "Video"
+    ]
+  },
+  {
+    "id": "mccann",
+    "featured": true,
     "nav": "McCann Health",
     "title": "McCann Health Medical Communications",
     "imgs": 2,
     "body": [
-      "McCann Health Medical Communications hired me to build the 2D version of a planned 3D Unity build for a series of virtual conferences. I used a blank WordPress template and built out the pages and content based on the designs provided, including navigation, page components, Advanced Custom Field (ACF) content where necessary. A plugin was then added which enabled the creation of API endpoints in a JSON format, which in turn informed the 3D Unity build of the content to be shown.",
+      "McCann Health Medical Communications hired me to build the 2D version of a planned 3D Unity build for a series of virtual conferences for Novartis. I used a blank WordPress template and built out the pages and content based on the designs provided, including navigation, page components, Advanced Custom Field (ACF) content where necessary. A plugin was then added which enabled the creation of API endpoints in a JSON format, which in turn informed the 3D Unity build of the content to be shown.",
       "This WordPress template was customised and branded as required for the various conferences that were to follow.",
       "I also built an interactive map component using a SVG with multiple paths referencing a separate JSON file, enabling the statistical data for each state to be displayed on hover, including a matching colour reference for that state depending on the figure represented. I also included the functionality to be able to switch between three versions of the same map."
     ],
     "links": [
       {
         "link": "https://112020.hallsofscience.com/2d/",
-        "label": "The Halls of Science virtual conference - 2D version"
+        "label": "Novartis Halls of Science virtual conference"
       },
       {
         "link": "https://112020.hallsofscience.com/impact-of-cvd/impact-of-cvd-in-usa/",
-        "label": "Halls of Science: Impact of CVD - interactive map"
+        "label": "Novartis Halls of Science: Impact of CVD - interactive map"
       }
     ],
     "tags": [
@@ -532,8 +561,8 @@
     ],
     "links": [
       {
-        "link": "n/a",
-        "label": "Mission Housing"
+        "link": "https://web.archive.org/web/20160109191824if_/https://missionhousing.org.uk/",
+        "label": "Mission Housing (archived page)"
       }
     ],
     "tags": [
@@ -570,13 +599,13 @@
   },
   {
     "id": "princess-cruises",
-    "featured": false,
+    "featured": true,
     "nav": "Princess Cruises",
     "title": "Princess Cruises - Interactive long-form piece for The Telegraph",
     "imgs": 2,
     "body": [
       "A long form advertorial piece involving animation, video, hotspots, and infographics.",
-      "The challenge here was to create performant, looping wave and boat animations. There are many ways of achieving this but for simplicity, I implemented the popular JavaScript animation library <a href='https://www.greensock.com' target='_blank'>GreenSock</a>."
+      "The challenge here was to create performant, looping wave and boat animations. There are many ways of achieving this but for simplicity, I implemented the popular JavaScript animation library Greensock."
     ],
     "links": [
       {
@@ -605,18 +634,18 @@
     "title": "SimpleStream - Streaming Media",
     "imgs": 2,
     "body": [
-      "Simplestream are a VOD supplier for multiple sites. My responsibilities included building and maintaining responsive UI and functionality based on supplied layouts and wireframes, visual asset editing, and some back-end API integration for sites such as NWSL Soccer and Marquee Arts."
+      "Simplestream are a VOD supplier for multiple sites. My responsibilities included building and maintaining responsive UI and functionality based on supplied layouts and wireframes, visual asset editing, and some back-end API integration for sites such as NWSL Soccer and Marquee Arts.",
+      "One of the challenges I overcame was coding responsive layouts for pages that are heavy on data and statistics, so all the scores and figures could be visible on smaller mobile devices and screens."
     ],
     "links": [
       {
-        "link": "https://www.simplestream.com",
-        "label": "Simplestream website"
+        "link": "https://web.archive.org/web/20170606031715if_/http://www.nwslsoccer.com/",
+        "label": "NWSL website by Simplestream (archived page)"
       }
     ],
     "tags": [
       "PHP",
       "SimpleStream",
-      "API",
       "HTML",
       "CSS",
       "JavaScript"]
@@ -628,12 +657,13 @@
     "title": "Singapore Airlines - Interactive long-form piece for The Telegraph",
     "imgs": 2,
     "body": [
-      "A long form advertorial piece involving an animated infographic with hotspots and scrolling features."
+      "A long form advertorial piece involving an animated infographic with hotspots and scrolling features.",
+      "As with all interactive long-forms I built, special consideration had to be made to ensure the UI was optimised for mobile and tablet as well as desktop. This sometimes means presenting the same information in a slightly different format without deviating from the designer's intention or compromising the user experience."
     ],
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/icons-of-the-sky/why-fly-with-singapore-airlines/",
-        "label": "Singapore Airlines - Interactive, responsive long form advertorial"
+        "label": "Singapore Airlines - Interactive long-form advertorial"
       }
     ],
     "tags": [
@@ -678,7 +708,7 @@
     ]
   },
   {
-    "id": "Treasure8",
+    "id": "treasure8",
     "featured": false,
     "nav": "Treasure8",
     "title": "Iter8 by Treasure8- Interactive web app",
@@ -708,15 +738,15 @@
     "id": "yorkshire-bank",
     "featured": false,
     "nav": "Yorkshire Bank",
-    "title": "Yorkshire Bank - AMP story on SMEs for The Telegraph",
+    "title": "Yorkshire Bank - SME challenges long-form for The Telegraph",
     "imgs": 2,
     "body": [
-      "A Yorkshire Bank advertorial involving animation and scrolling parallax features."
+      "A long-form advertorial involving animation and scrolling parallax features, for Yorkshire Bank."
     ],
     "links": [
       {
-        "link": "https://www.telegraph.co.uk/visual-stories/top-5-business-challenges-2019/",
-        "label": "Yorkshire Bank AMP story on SMEs in 2019"
+        "link": "https://www.telegraph.co.uk/business/challenges/sme-key-challenges-2019/",
+        "label": "SME Key Challenges - long-form"
       }
     ],
     "tags": [

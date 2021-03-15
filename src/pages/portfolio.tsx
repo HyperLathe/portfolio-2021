@@ -36,18 +36,6 @@ const Content = styled.div `
   }
 `;
 
-const Links = styled.div `
-  display: flex;
-  flex-direction: column;
-   a {
-     margin-bottom: 5px;
-     @media screen and (min-width: 768px) {
-      margin-bottom: 0px;
-     }
-   }
-`;
-
-
 function Portfolio() {
   return (
     <Content>

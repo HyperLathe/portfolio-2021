@@ -1,4 +1,7 @@
+
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
+import PortfolioData from '../content/portfolio_content.json';
 
 const Content = styled.div `
   img {
@@ -9,11 +12,11 @@ const Content = styled.div `
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.1rem;
-    margin: 40px 0;
+    margin: 60px 0 20px 0;
     text-align: center;
     color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
   h3 {
@@ -22,13 +25,16 @@ const Content = styled.div `
     text-transform: uppercase;
     font-size: 1rem;
     margin: 10px 0px 5px 0px;
-    color: ${({ theme }) => theme.bodyText};
+    text-align: center;
+    color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
-      font-size: 1rem;
+      font-size: 1.25rem;
+      margin: 60px 0px 20px 0px;
     }
   }
   p {
     margin: 5px 0px 20px 0px;
+    text-align: center;
     color: ${({ theme }) => theme.bodyText};
     @media screen and (min-width: 768px) {
       font-size: 1rem;
@@ -36,9 +42,10 @@ const Content = styled.div `
   }
   a {
     text-decoration: none;
-    color: #d76b65;
+    color: ${({ theme }) => theme.linkText};
       &:hover {
         text-decoration: underline;
+        color: ${({ theme }) => theme.bodyText};
       }
     @media screen and (min-width: 768px) {
       font-size: 1rem;
@@ -46,14 +53,47 @@ const Content = styled.div `
   }
 `;
 
-const Links = styled.div `
+const FeaturedBlock = styled.div `
+  margin: 30px 0 40px 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
    a {
      margin-bottom: 5px;
+     width: 24%;
+     position: relative;
+     color: #ffffff;
+     border: 1px solid ${({ theme }) => theme.lineColor};
+     font-size: 1rem;
+     background-size: 130%;
+     background-position: center;
+     transition: all 0.2s linear;
+     &:hover {
+      background-size: 160%;
+      color: #ffffff;
+     }
+     &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+     }
+     span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      background-color: ${({ theme }) => theme.featureBlockBackground};
+     }
      @media screen and (min-width: 768px) {
       margin-bottom: 0px;
      }
+   }
+   @media screen and (min-width: 768px) {
+      flex-direction: row;
+
    }
 `;
 
@@ -63,10 +103,20 @@ function Home() {
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
       <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
-      <h3>Problem solving on both a macro and micro level</h3>
+      <h3>Problem solving</h3>
       <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, jQuery, WordPress, image editing, asset creation &amp; optimising, video/audio editing.</p>
       <h3>Featured projects:</h3>
-      <p>For a more comprehensive list please check out my <a href='/portfolio/'>portfolio</a>.</p>
+
+      <FeaturedBlock>
+      {Object.entries(PortfolioData).map(([key, value]) => {
+         {return (value.featured === false) ? '' :
+         <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span>{value.title}</span></Link>
+        // <Route path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />}>{value.id}</Route>
+        } 
+      })}
+      </FeaturedBlock>
+
+      <p>For a more comprehensive list of projects, please check out my <Link to='/portfolio/'>portfolio</Link>, and to discuss your requirements please email info(at)hyperlathe.com.</p>
     </Content>
   );
 }

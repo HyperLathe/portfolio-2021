@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { useEffect } from 'react';
 
 const Content = styled.div `
   img {
@@ -24,9 +25,10 @@ const Content = styled.div `
   }
   a {
     text-decoration: none;
-    color: #d76b65;
+    color: ${({ theme }) => theme.linkText};
       &:hover {
         text-decoration: underline;
+        color: ${({ theme }) => theme.bodyText};
       }
     @media screen and (min-width: 768px) {
       font-size: 1rem;
@@ -35,18 +37,26 @@ const Content = styled.div `
 `;
 
 const ImageBlock = styled.div `
-  border: 1px solid ${({ theme }) => theme.bodyText};
-  padding: 30px;
-  border-radius: 10px;
+  border: 1px solid ${({ theme }) => theme.lineColor};
+  padding: 50px 10%;
+    a img {
+      border: 1px solid ${({ theme }) => theme.lineColor};
+    }
+    a:last-child img {
+      width: 30%;
+      margin: 50px auto 0px auto;
+    }
 `;
 
-const Link = styled.div `
+const LinkBlock = styled.div `
+  margin: 40px 0; 
   display: flex;
   flex-direction: column;
+  text-align: center;
    a {
      margin-bottom: 5px;
      @media screen and (min-width: 768px) {
-      margin-bottom: 0px;
+      margin-bottom: 10px;
      }
    }
 `;
@@ -72,8 +82,21 @@ interface Project {
 	tags: string[];
 }
 
-function projectPage({id, featured, nav, title, imgs, body, links, tags}: Project) {
-  // console.log(props);
+
+function ProjectPage({id, featured, nav, title, imgs, body, links, tags}: Project) {
+  console.log(links);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
+
+  const ImageArray = [...Array(imgs)].map((_, i) => {
+    return (
+    <a href={links[0].link} target='_blank'><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a>
+    );
+  });
+
   return (
     <Content>
       <h2>{title}</h2>
@@ -81,16 +104,25 @@ function projectPage({id, featured, nav, title, imgs, body, links, tags}: Projec
       {Object.entries(body).map(([key, value]) => {
 				return (<p key={key}>{value}</p>)
       })}
+
+      <LinkBlock>
+      {(links[0].link === 'n/a') ? <p>No link(s) available.</p> : links.map((value) => {
+          return <a href={value.link} target="_blank" rel="noopener noreferrer" key={value.label}>{value.label}</a>
+        })} 
+      </LinkBlock>
+
+
       <ImageBlock>
-<p>images</p>
-
+      {ImageArray}
       </ImageBlock>
-      <TagList>
 
-      </TagList>
-      
+      <TagList>
+        {Object.entries(tags).map(([key, value]) => {
+          return (<li key={key}> {value}&nbsp;•&nbsp;</li>)
+        })}
+        </TagList>
     </Content>
   );
 }
 
-export default projectPage;
+export default ProjectPage;

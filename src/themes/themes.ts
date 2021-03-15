@@ -16,7 +16,11 @@ export const lightTheme = {
   navHoverSelectedText: "#ffffff",
   navSelectedArrow: "#3dc0dc",
   bodyText: "#282828",
-  buttonColor: "#b4b4b4"
+  buttonColor: "#b4b4b4",
+  lineColor: "#b4b4b4",
+  featureBlockBackground: "rgba(32,112,129,0.8)",
+  headers: "#0e6779",
+  linkText: "#0e6779"
 }
 
 export const darkTheme = {
@@ -32,5 +36,9 @@ export const darkTheme = {
   navHoverSelectedText: "#ffffff",
   navSelectedArrow: "#0e6779",
   bodyText: "#e0e0e0",
-  buttonColor: "#086980"
+  buttonColor: "#086980",
+  lineColor: "#b4b4b4",
+  featureBlockBackground: "rgba(32,112,129,0.5)",
+  headers: "#3dc0dc",
+  linkText: "#3dc0dc"
 }
