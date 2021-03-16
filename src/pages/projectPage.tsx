@@ -38,13 +38,17 @@ const Content = styled.div `
 
 const ImageBlock = styled.div `
   border: 1px solid ${({ theme }) => theme.lineColor};
-  padding: 50px 10%;
-    a img {
+  padding: 3% 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+    a {
+      margin: 0px 2%;
+      img {
       border: 1px solid ${({ theme }) => theme.lineColor};
+      max-height: 500px;
     }
-    a:last-child img {
-      width: 30%;
-      margin: 50px auto 0px auto;
+
     }
 `;
 
@@ -92,7 +96,8 @@ function ProjectPage({id, featured, nav, title, imgs, body, links, tags}: Projec
   
 
   const ImageArray = [...Array(imgs)].map((_, i) => {
-    return (
+    return ( (links[0].link === 'n/a') ? 
+    <a href={'/portfolio'}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a> :
     <a href={links[0].link} target='_blank'><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a>
     );
   });
