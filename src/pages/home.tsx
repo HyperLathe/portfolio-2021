@@ -81,11 +81,20 @@ const FeaturedBlock = styled.div `
       position: absolute;
       width: 100%;
       height: 100%;
-      padding: 20px;
       display: flex;
       text-align: center;
       align-items: center;
       background-color: ${({ theme }) => theme.featureBlockBackground};
+        &:hover {
+          background: transparent;
+        }
+        label {
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+          background: rgba(0,0,0,0.6);
+          color: #ffffff;
+        }
      }
      @media screen and (min-width: 768px) {
       margin-bottom: 0px;
@@ -110,7 +119,7 @@ function Home() {
       <FeaturedBlock>
       {Object.entries(PortfolioData).map(([key, value]) => {
          {return (value.featured === false) ? '' :
-         <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span>{value.title}</span></Link>
+         <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.title}</label></span></Link>
         // <Route path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />}>{value.id}</Route>
         } 
       })}
