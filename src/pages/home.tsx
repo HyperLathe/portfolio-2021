@@ -14,7 +14,7 @@ const Content = styled.div `
     font-size: 1.1rem;
     margin: 60px 0 20px 0;
     text-align: center;
-    color: ${({ theme }) => theme.bodyText};
+    color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
       font-size: 1.7rem;
     }
@@ -54,13 +54,13 @@ const Content = styled.div `
 `;
 
 const FeaturedBlock = styled.div `
-  margin: 30px 0 40px 0;
+  margin: 30px 0 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
    a {
-     margin-bottom: 5px;
-     width: 24%;
+     margin-bottom: 30px;
+     width: 100%;
      position: relative;
      color: #ffffff;
      border: 1px solid ${({ theme }) => theme.lineColor};
@@ -75,7 +75,7 @@ const FeaturedBlock = styled.div `
      &:after {
       content: "";
       display: block;
-      padding-bottom: 100%;
+      padding-bottom: 40%;
      }
      span {
       position: absolute;
@@ -92,12 +92,19 @@ const FeaturedBlock = styled.div `
           width: 100%;
           text-align: center;
           padding: 10px;
-          background: rgba(0,0,0,0.6);
-          color: #ffffff;
+          background: ${({ theme }) => theme.labelBackground};
+          color: ${({ theme }) => theme.labelColor};
+            &:hover {
+              cursor: pointer;
+            }
         }
      }
      @media screen and (min-width: 768px) {
       margin-bottom: 0px;
+      width: 24%;
+        &:after {
+          padding-bottom: 100%;
+        }
      }
    }
    @media screen and (min-width: 768px) {
@@ -112,15 +119,14 @@ function Home() {
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
       <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
-      <h3>Problem solving</h3>
-      <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, jQuery, WordPress, image editing, asset creation &amp; optimising, video/audio editing.</p>
+      <h3>Problem Solver</h3>
+      <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, WordPress, image editing.</p>
       <h3>Featured projects:</h3>
 
       <FeaturedBlock>
       {Object.entries(PortfolioData).map(([key, value]) => {
          {return (value.featured === false) ? '' :
          <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.title}</label></span></Link>
-        // <Route path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />}>{value.id}</Route>
         } 
       })}
       </FeaturedBlock>

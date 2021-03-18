@@ -97,7 +97,7 @@ const Nav = styled.nav`
 	transform-origin: right;
 	transition: all 0.3s ease;
 	overflow-y: scroll;
-	background: ${({ theme }) => theme.background};
+	background: ${({ theme }) => theme.navBackground};
 		&.nav-open {
 			transform: scaleX(1);
 	transition: all 0s ease;
@@ -192,14 +192,17 @@ const MobileExtraLinks = styled.div`
 
 const Content = styled.div`
 	width: 100vw;
-	padding: 70px 15px 10px 15px;
+	padding: 70px 15px 50px 15px;
 	height: 100%;
 	min-height: 100vh;
 	@media screen and (min-width: 768px) {
 		height: 100%;
-		padding: 105px 0 80px 0;
-    width: 60vw;
+		padding: 100px 0;
+    width: 80vw;
     margin: 0px auto;
+	}
+	@media screen and (min-width: 1000px) {
+    width: 60vw;
 	}
 `;
 
@@ -263,7 +266,7 @@ function App() {
 						<Route exact path="/portfolio" component={Portfolio} />
 
 						{Object.entries(PortfolioData).map(([key, value]) => {
-							return (<Route key={key} path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />} />)
+							return (<Route exact key={key} path={"/portfolio/" + value.id} component={() => <ProjectPage {...value} />} />)
       			}
 						)}
 						

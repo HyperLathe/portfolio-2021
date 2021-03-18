@@ -298,6 +298,30 @@
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/blues/",
         "label": "Evolution of Music 1/7 - Blues"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/jazz/",
+        "label": "Evolution of Music 2/7 - Jazz"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/country/",
+        "label": "Evolution of Music 3/7 - Country"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/rock-n-roll/",
+        "label": "Evolution of Music 4/7 - Rock & Roll"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/soul/",
+        "label": "Evolution of Music 5/7 - Soul"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/hip-hop/",
+        "label": "Evolution of Music 6/7 - Hip Hop"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/edm/",
+        "label": "Evolution of Music 7/7 - EDM"
       }
     ],
     "tags": [
@@ -366,7 +390,35 @@
       "CSS",
       "JavaScript",
       "Fury CS",
-      "Fury Creative Services"
+      "Fury Creative Services",
+      "Portfolio"
+    ]
+  },
+  {
+    "id": "hyperlathe",
+    "featured": false,
+    "nav": "Hyperlathe",
+    "title": "Hyperlathe Ltd - my portfolio site",
+    "imgs": 2,
+    "body": [
+      "I wanted something lightweight and easy to maintain, so for the current iteration of my portfolio site, I chose React and Typescript over the previous version which was built with PHP and Ajax.",
+      "The site is hosted on Netlify, a great static hosting solution. Changes and updates made via Github are automatically built and pushed live."
+    ],
+    "links": [
+      {
+        "link": "n/a",
+        "label": "HyperLate Ltd"
+      }
+    ],
+    "tags": [
+      "React",
+      "Typescript",
+      "Netlify",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Hyperlathe",
+      "Portfolio"
     ]
   },
   {

@@ -9,11 +9,11 @@ const Content = styled.div `
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.1rem;
-    margin: 40px 0;
+    margin: 60px 0 20px 0;
     text-align: center;
-    color: ${({ theme }) => theme.bodyText};
+    color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
   p {

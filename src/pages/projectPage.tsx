@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Content = styled.div `
@@ -9,11 +10,11 @@ const Content = styled.div `
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 1.1rem;
-    margin: 40px 0px 40px 0px;
+    margin: 60px 0 20px 0;
     text-align: center;
-    color: ${({ theme }) => theme.bodyText};
+    color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
   p {
@@ -65,9 +66,39 @@ const LinkBlock = styled.div `
    }
 `;
 
-const TagList = styled.ul `
+const TagBlock = styled.div `
+  text-align: center;
+  h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+    color: ${({ theme }) => theme.headers};
+    @media screen and (min-width: 768px) {
+      font-size: 1.25rem;
+      margin: 60px 0px 20px 0px;
+    }
+  }
+  ul {
   display: flex;
-
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 0 60px 0;
+  padding: 0;
+  justify-content: center;
+   li {
+     padding-right: 5px;
+     color: ${({ theme }) => theme.bodyText};
+      &:after {
+        content: '•';
+      }
+    &:last-child:after {
+      display: none;
+    }
+   }
+  }
 `;
 
 interface Ilink {
@@ -87,45 +118,50 @@ interface Project {
 }
 
 
-function ProjectPage({id, featured, nav, title, imgs, body, links, tags}: Project) {
-  console.log(links);
+function ProjectPage({id, nav, title, imgs, body, links, tags}: Project) {
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   
 
-  const ImageArray = [...Array(imgs)].map((_, i) => {
+  const ImageArray = [...Array(imgs)].map((key, i) => {
     return ( (links[0].link === 'n/a') ? 
-    <a href={'/portfolio'}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a> :
-    <a href={links[0].link} target='_blank'><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a>
+    <Link key={key} to={'/portfolio'}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></Link> :
+    <a key={key} href={links[0].link} target='_blank'><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a>
     );
   });
 
   return (
     <Content>
-      <h2>{title}</h2>
-
-      {Object.entries(body).map(([key, value]) => {
-				return (<p key={key}>{value}</p>)
-      })}
-
-      <LinkBlock>
-      {(links[0].link === 'n/a') ? <p>No link(s) available.</p> : links.map((value) => {
-          return <a href={value.link} target="_blank" rel="noopener noreferrer" key={value.label}>{value.label}</a>
-        })} 
-      </LinkBlock>
-
-
-      <ImageBlock>
-      {ImageArray}
-      </ImageBlock>
-
-      <TagList>
-        {Object.entries(tags).map(([key, value]) => {
-          return (<li key={key}> {value}&nbsp;•&nbsp;</li>)
+      <section>
+        <h2>{title}</h2>
+        {Object.entries(body).map(([key, value]) => {
+          return (<p key={key}>{value}</p>)
         })}
-        </TagList>
+        <LinkBlock>
+        {(links[0].link === 'n/a') ? <p>No link(s) available.</p> : links.map((value, key) => {
+            return <a key={key} href={value.link} target="_blank" rel="noopener noreferrer" title={value.label}>{value.label}</a>
+          })} 
+        </LinkBlock>
+      </section>
+
+      <section>
+        <ImageBlock>
+        {ImageArray}
+        </ImageBlock>
+      </section>
+
+      <section>
+        <TagBlock>
+        <h3>Tags:</h3>
+          <ul>
+          {Object.entries(tags).map(([key, value]) => {
+            return (<li key={key}> {value} </li>)
+          })}
+          </ul>
+        </TagBlock>
+        </section>
     </Content>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from 'styled-components';
 
 const NavButton = styled.button `
@@ -17,7 +16,7 @@ const NavButton = styled.button `
       width: 27px;
       height: 2px;
       display: block;
-      background: #000;
+      background: ${({ theme }) => theme.bodyText};
       margin: 0px 0px 6px 0px;
       transition: all 0.2s linear;
       opacity: 1;
