@@ -9,7 +9,8 @@ const Content = styled.div `
   h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
     margin: 60px 0 20px 0;
     text-align: center;
     color: ${({ theme }) => theme.headers};
@@ -31,10 +32,11 @@ const Content = styled.div `
         text-decoration: underline;
         color: ${({ theme }) => theme.bodyText};
       }
-    @media screen and (min-width: 768px) {
-      font-size: 1rem;
-    }
   }
+`;
+
+const BackLink = styled.span `
+  font-size: 0.8rem;
 `;
 
 const ImageBlock = styled.div `
@@ -43,14 +45,25 @@ const ImageBlock = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 50px;
+  flex-direction: column;
     a {
       margin: 0px 2%;
-      img {
-      border: 1px solid ${({ theme }) => theme.lineColor};
-      max-height: 500px;
-    }
-
-    }
+        img {
+          border: 1px solid ${({ theme }) => theme.lineColor};
+          max-height: 500px;
+        }
+      &:first-child {
+        margin-bottom: 30px;
+        }
+      }
+     @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+      flex-direction: row;
+        a:first-child {
+          margin-bottom: 0px;
+        }
+     }
 `;
 
 const LinkBlock = styled.div `
@@ -85,7 +98,7 @@ const TagBlock = styled.div `
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0 0 60px 0;
+  margin: 0;
   padding: 0;
   justify-content: center;
    li {
@@ -134,13 +147,14 @@ function ProjectPage({id, nav, title, imgs, body, links, tags}: Project) {
 
   return (
     <Content>
+      <BackLink><Link to={'/portfolio/'}>{'<'} Back to Portfolio</Link></BackLink>
       <section>
         <h2>{title}</h2>
         {Object.entries(body).map(([key, value]) => {
           return (<p key={key}>{value}</p>)
         })}
         <LinkBlock>
-        {(links[0].link === 'n/a') ? <p>No link(s) available.</p> : links.map((value, key) => {
+        {(links[0].link === 'n/a') ? <p>No external link(s) available.</p> : links.map((value, key) => {
             return <a key={key} href={value.link} target="_blank" rel="noopener noreferrer" title={value.label}>{value.label}</a>
           })} 
         </LinkBlock>

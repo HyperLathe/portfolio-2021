@@ -24,7 +24,7 @@ const Content = styled.div `
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1rem;
-    margin: 10px 0px 5px 0px;
+    margin: 60px 0px 5px 0px;
     text-align: center;
     color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
@@ -54,7 +54,7 @@ const Content = styled.div `
 `;
 
 const FeaturedBlock = styled.div `
-  margin: 30px 0 60px 0;
+  margin: 20px 0 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,7 +109,7 @@ const FeaturedBlock = styled.div `
    }
    @media screen and (min-width: 768px) {
       flex-direction: row;
-
+      margin: 30px 0 60px 0;
    }
 `;
 
@@ -119,7 +119,7 @@ function Home() {
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
       <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
-      <h3>Problem Solver</h3>
+      <h3>Problem Solving Via:</h3>
       <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, WordPress, image editing.</p>
       <h3>Featured projects:</h3>
 

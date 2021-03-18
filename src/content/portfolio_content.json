@@ -42,7 +42,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/culture-and-events-australia/",
-        "label": "Culture and events Australia - Interactive, responsive long form advertorials"
+        "label": "Culture and events Australia - Interactive, responsive long form advertorials >"
       }
     ],
     "tags": [
@@ -70,7 +70,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20150319022523if_/http://www.beforethetour.com/",
-        "label": "Before the Tour (archived page)"
+        "label": "Before the Tour (archived page) >"
       }
     ],
     "tags": [
@@ -99,7 +99,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/business/boeing-uk/inside-the-p8a-poseidon/",
-        "label": "Inside the Boeing P-8A Poseidon Maritime Patrol Aircraft"
+        "label": "Inside the Boeing P-8A Poseidon Maritime Patrol Aircraft >"
       }
     ],
     "tags": [
@@ -127,13 +127,12 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20150905134043if_/https://bostonivy.co/",
-        "label": "Boston Ivy (archived page)"
+        "label": "Boston Ivy (archived page) >"
       }
     ],
     "tags": [
       "WordPress",
       "PHP",
-      "Emails",
       "Design",
       "Mailchimp",
       "HTML emails",
@@ -142,7 +141,8 @@
       "CSS",
       "JavaScript",
       "Boston Ivy",
-      "IG Index"
+      "IG Index",
+      "Grunt"
     ]
   },
   {
@@ -159,7 +159,7 @@
     "links": [
       {
         "link": "http://brianlockmusic.com/",
-        "label": "Brian Lock Music"
+        "label": "Brian Lock Music >"
       }
     ],
     "tags": [
@@ -186,7 +186,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20160713220335if_/http://thecascadesnw3.com:80/",
-        "label": "The Cascades (archived page)"
+        "label": "The Cascades (archived page) >"
       }
     ],
     "tags": [
@@ -214,7 +214,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20170407233531/https://www.centtrip.com/",
-        "label": "Centtrip (archived page)"
+        "label": "Centtrip (archived page) >"
       }
     ],
     "tags": [
@@ -249,7 +249,6 @@
     ],
     "tags": [
       "Angular",
-      "Emails",
       "HTML emails",
       "HTML",
       "CSS",
@@ -271,7 +270,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/property/home-improvement-tips/what-makes-house-a-home/",
-        "label": "Everest - Interactive House Infographic for The Telegraph"
+        "label": "Everest - Interactive House Infographic for The Telegraph >"
       }
     ],
     "tags": [
@@ -292,36 +291,37 @@
     "title": "Evolution of Music - a series of interactive long-forms for The Telegraph",
     "imgs": 2,
     "body": [
-      "A total of seven long-forms were built in VueJS for The Telegraph advertorial team 'Spark', one for each genre of music covered."
+      "A total of seven long-forms were built in VueJS for The Telegraph advertorial team 'Spark', one for each genre of music covered.",
+      "As with all long-form content, special consideration was made to the responsive layouts, to ensure the content was readable and accessible regardless of viewport size."
     ],
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/blues/",
-        "label": "Evolution of Music 1/7 - Blues"
+        "label": "Evolution of Music 1/7 - Blues >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/jazz/",
-        "label": "Evolution of Music 2/7 - Jazz"
+        "label": "Evolution of Music 2/7 - Jazz >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/country/",
-        "label": "Evolution of Music 3/7 - Country"
+        "label": "Evolution of Music 3/7 - Country >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/rock-n-roll/",
-        "label": "Evolution of Music 4/7 - Rock & Roll"
+        "label": "Evolution of Music 4/7 - Rock & Roll >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/soul/",
-        "label": "Evolution of Music 5/7 - Soul"
+        "label": "Evolution of Music 5/7 - Soul >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/hip-hop/",
-        "label": "Evolution of Music 6/7 - Hip Hop"
+        "label": "Evolution of Music 6/7 - Hip Hop >"
       },
       {
         "link": "https://www.telegraph.co.uk/travel/discover-america/evolution-of-music/edm/",
-        "label": "Evolution of Music 7/7 - EDM"
+        "label": "Evolution of Music 7/7 - EDM >"
       }
     ],
     "tags": [
@@ -330,7 +330,8 @@
       "Telegraph",
       "HTML",
       "CSS",
-      "JavaScript"
+      "JavaScript",
+      "Evolution of Music"
     ]
   },
   {
@@ -346,7 +347,7 @@
     "links": [
       {
         "link": "https://expertwomenproject.com/",
-        "label": "Expert Women Project"
+        "label": "Expert Women Project >"
       }
     ],
     "tags": [
@@ -370,16 +371,16 @@
     "body": [
       "I was commissioned to rebuild and replatform the portfolio site for Fury Creative Services, based in Seattle. The intention was to reduce load times and overall peformance, while making the site responsive and quick to navigate.",
       "I chose to replace the previous templated html site with a React build, which resulted in bringing the overall size down from 181mb to just under 9mb. In addition to optimisation and accessibility improvements, I also added a responsive layout and navigation, along with an image gallery feature.",
-      "I hosted the web app on Netlify for the client to test and verify, using the benefit of CI/CD via Github, before providing the finshed bundled files that she was able to upload easily to her own server."
+      "I hosted the web app on Netlify for the client to test and verify, using the benefit of CI/CD via Github, before providing the finished bundled files that she was able to upload easily to her own server."
     ],
     "links": [
       {
         "link": "https://www.furycs.com",
-        "label": "Fury Creative Services - Live site"
+        "label": "Fury Creative Services - Live site >"
       },
       {
         "link": "https://furycs-staging-33d46b.netlify.app/",
-        "label": "Fury Creative Services - staging on Netlify"
+        "label": "Fury Creative Services - staging on Netlify >"
       }
     ],
     "tags": [
@@ -407,7 +408,7 @@
     "links": [
       {
         "link": "n/a",
-        "label": "HyperLate Ltd"
+        "label": "HyperLathe Ltd"
       }
     ],
     "tags": [
@@ -434,7 +435,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20150811053009if_/http://invenias.com/",
-        "label": "Invenias (archived page)"
+        "label": "Invenias (archived page) >"
       }
     ],
     "tags": [
@@ -463,7 +464,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/indulge-in-ireland/culture-lore-and-legends/",
-        "label": "Culture, Lore and Legends - long-form"
+        "label": "Culture, Lore and Legends - long-form >"
       }
     ],
     "tags": [
@@ -524,13 +525,13 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20131003173904if_/http://www.lebara.co.uk/",
-        "label": "Lebara Mobile (archived page)"
+        "label": "Lebara Mobile (archived page) >"
       }
     ],
     "tags": [
       "WordPress",
       "PHP",
-      "Emails",
+      "HTML Emails",
       "HTML",
       "CSS",
       "JavaScript",
@@ -554,7 +555,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/films/the-mercy/ordinary-man-extraordinary-challenge/",
-        "label": "The Mercy - interactive long-form"
+        "label": "The Mercy - interactive long-form >"
       }
     ],
     "tags": [
@@ -584,11 +585,11 @@
     "links": [
       {
         "link": "https://112020.hallsofscience.com/2d/",
-        "label": "Novartis Halls of Science virtual conference"
+        "label": "Novartis Halls of Science virtual conference >"
       },
       {
         "link": "https://112020.hallsofscience.com/impact-of-cvd/impact-of-cvd-in-usa/",
-        "label": "Novartis Halls of Science: Impact of CVD - interactive map"
+        "label": "Novartis Halls of Science: Impact of CVD - interactive map >"
       }
     ],
     "tags": [
@@ -614,7 +615,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20160109191824if_/https://missionhousing.org.uk/",
-        "label": "Mission Housing (archived page)"
+        "label": "Mission Housing (archived page) >"
       }
     ],
     "tags": [
@@ -662,7 +663,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/cruises/remarkable-moments/life-on-board/",
-        "label": "Princess Cruises - Interactive, responsive long form advertorial"
+        "label": "Princess Cruises - Interactive, responsive long form advertorial >"
       }
     ],
     "tags": [
@@ -692,7 +693,7 @@
     "links": [
       {
         "link": "https://web.archive.org/web/20170606031715if_/http://www.nwslsoccer.com/",
-        "label": "NWSL website by Simplestream (archived page)"
+        "label": "NWSL website by Simplestream (archived page) >"
       }
     ],
     "tags": [
@@ -715,7 +716,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/travel/icons-of-the-sky/why-fly-with-singapore-airlines/",
-        "label": "Singapore Airlines - Interactive long-form advertorial"
+        "label": "Singapore Airlines - Interactive long-form advertorial >"
       }
     ],
     "tags": [
@@ -744,7 +745,7 @@
     "links": [
       {
         "link": "https://soapybusiness.com",
-        "label": "Soapy Business online store"
+        "label": "Soapy Business online store >"
       }
     ],
     "tags": [
@@ -773,7 +774,7 @@
     "links": [
       {
         "link": "http://www.iter8.treasure8.com/home",
-        "label": "Iter8 by Treasure8 web app"
+        "label": "Iter8 by Treasure8 web app >"
       }
     ],
     "tags": [
@@ -798,7 +799,7 @@
     "links": [
       {
         "link": "https://www.telegraph.co.uk/business/challenges/sme-key-challenges-2019/",
-        "label": "SME Key Challenges - long-form"
+        "label": "SME Key Challenges - long-form >"
       }
     ],
     "tags": [

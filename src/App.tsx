@@ -136,9 +136,11 @@ const Nav = styled.nav`
 					}
 					&.active {
 						color: ${({ theme }) => theme.navSelectedText};
+						@media (hover: hover) {
 							&:hover {
 								color: ${({ theme }) => theme.navSelectedHoverText};
 							}
+						}
 							&:after {
 								width: 0; 
 								height: 0; 
@@ -148,12 +150,15 @@ const Nav = styled.nav`
 								content: '';
 								display: block;
 								position: absolute;
-								margin-bottom: -28px;
+								margin-bottom: 19px;
+								bottom: 0;
 							}
 					}
-					&:hover {
-						color: ${({ theme }) => theme.navHoverText};
-						background: ${({ theme }) => theme.navHoverBackground};
+					@media (hover: hover) {
+						&:hover {
+							color: ${({ theme }) => theme.navHoverText};
+							background: ${({ theme }) => theme.navHoverBackground};
+						}
 					}
 			}
 	}
@@ -168,8 +173,10 @@ const DayNightButton = styled.button`
 	border: 0;
 	outline: none;
 	cursor: pointer;
-		&:hover {
-			background-color: ${({ theme }) => theme.logoBackground};
+		@media (hover: hover) {
+			&:hover {
+				background-color: ${({ theme }) => theme.logoBackground};
+			}
 		}
 `;
 
@@ -192,7 +199,7 @@ const MobileExtraLinks = styled.div`
 
 const Content = styled.div`
 	width: 100vw;
-	padding: 70px 15px 50px 15px;
+	padding: 70px 15px 80px 15px;
 	height: 100%;
 	min-height: 100vh;
 	@media screen and (min-width: 768px) {
@@ -216,7 +223,7 @@ const Footer = styled.footer`
   padding: 0px 30px;
 	border-top: 1px solid #b4b4b4;
 	font-size: 0.8rem;
-	background: ${({ theme }) => theme.background};
+	background: ${({ theme }) => theme.headerBackground};
 	color: ${({ theme }) => theme.bodyText};
 `;
 
