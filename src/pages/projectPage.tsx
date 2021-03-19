@@ -84,7 +84,6 @@ const TagBlock = styled.div `
   h3 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
-    text-transform: uppercase;
     font-size: 1rem;
     margin: 10px 0px 5px 0px;
     text-align: center;

@@ -85,9 +85,9 @@ const Nav = styled.nav`
 	top: 0;
 	right: 0;
 	margin: 0px;
-	padding: 20px;
+	padding: 18px 20px 20px 20px;
 	width: 200px;
-	height: 100%;
+	height: 130%;
 	min-height: 100vh;
 	margin-right: -200px;
 	text-align: right;
@@ -100,7 +100,7 @@ const Nav = styled.nav`
 	background: ${({ theme }) => theme.navBackground};
 		&.nav-open {
 			transform: scaleX(1);
-	transition: all 0s ease;
+			transition: all 0s ease;
 			}
 	 a {
 			font-family: helvetica, arial, sans-serif;
@@ -110,6 +110,12 @@ const Nav = styled.nav`
 			color: ${({ theme }) => theme.navText};
 			margin-bottom: 7px;
 			transition: all 0.1s linear;
+				&:first-child {
+					margin-top: 10px;
+				}
+				&:last-child {
+					margin-bottom: 100px;
+				}
 	 }
 	@media screen and (min-width: 768px) {
 		margin-right: 0;
@@ -160,23 +166,37 @@ const Nav = styled.nav`
 							background: ${({ theme }) => theme.navHoverBackground};
 						}
 					}
+
+				&:first-child {
+					margin-top: 0px;
+				}
+				&:last-child {
+					margin-bottom: 0px;
+				}
 			}
 	}
 `;
 
 const DayNightButton = styled.button`
-	width: 75px;
-	height: 100%;
+	width: 30px;
+	height: 30px;
 	display: block;
 	background: url('${({ theme }) => theme.themeButton}') center center no-repeat;
-	background-size: 30px;
+	background-size: contain;
 	border: 0;
 	outline: none;
+	position: absolute;
 	cursor: pointer;
 		@media (hover: hover) {
 			&:hover {
 				background-color: ${({ theme }) => theme.logoBackground};
 			}
+		}
+		@media screen and (min-width: 768px) {
+			position: relative;
+			width: 75px;
+			height: 100%;
+			background-size: 30px;
 		}
 `;
 

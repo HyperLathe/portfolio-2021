@@ -26,7 +26,6 @@ const Content = styled.div `
   }
   a {
     text-decoration: none;
-    color: #d76b65;
       &:hover {
         text-decoration: underline;
       }

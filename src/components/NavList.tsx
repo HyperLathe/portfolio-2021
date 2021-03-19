@@ -1,4 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { DiReact } from 'react-icons/di';
+import { RiVuejsFill } from 'react-icons/ri';
+import { FaWordpress, FaAngular } from 'react-icons/fa';
+import { GiPaintBrush } from 'react-icons/gi';
+import { FaHtml5 } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
+import { DiCss3, DiPhp, DiJavascript1 } from 'react-icons/di';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
 import PortfolioData from '../content/portfolio_content.json';
@@ -6,6 +13,7 @@ import PortfolioData from '../content/portfolio_content.json';
 const Search = styled.div `
   text-align: center;
   margin: 40px auto;
+  color: ${({ theme }) => theme.bodyText};
     p {
       margin-bottom: 5px;
     }
@@ -18,6 +26,7 @@ const SearchInput = styled.input `
   width: 200px;
   outline: none;
   color: #000;
+  /* transform: translateX(-1rem); */
     &::placeholder {
       color: #b4b4b4;
     }
@@ -89,6 +98,15 @@ const NavListContainer = styled.div`
    }
 `;
 
+const TagIcons = styled.div `
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+   i {
+     font-size: 1.5rem;
+   }
+`;
 
 function NavList() {
 
@@ -120,7 +138,20 @@ function NavList() {
     <section>
     <NavListContainer>
     {searchResults.map((value: any, key) => (
-        <Link to={'/portfolio/' + value.id } key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.nav}</label></span></Link>
+        <Link to={'/portfolio/' + value.id } key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.nav}
+       <TagIcons>
+          {(value.tags.includes("React")? <i><DiReact color="#61DBFB" /></i> : '')}
+          {(value.tags.includes("VueJS")? <i><RiVuejsFill color="#41B883" /></i> : '')}
+          {(value.tags.includes("Angular")? <i><FaAngular color="#dd1b16" /></i> : '')}
+          {(value.tags.includes("WordPress")? <i><FaWordpress color="#21759b" /></i> : '')}
+          {(value.tags.includes("HTML")? <i><FaHtml5 color="#e34c26" /></i> : '')}
+          {(value.tags.includes("CSS")? <i><DiCss3 color="#2965f1" /></i> : '')}
+          {(value.tags.includes("JavaScript")? <i><DiJavascript1 color="#f0db4f" /></i> : '')}
+          {(value.tags.includes("PHP")? <i><DiPhp color="#8993be" /></i> : '')}
+          {(value.tags.includes("TypeScript")? <i><SiTypescript color="#007acc" /></i> : '')}
+          {(value.tags.includes("Design")? <i><GiPaintBrush color="#0a9911" /></i> : '')}
+       </TagIcons>
+        </label></span></Link>
         ))}
     </NavListContainer>
     </section>

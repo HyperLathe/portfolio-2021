@@ -36,13 +36,21 @@
     "title": "Australian Tourism long-forms - Interactive advertorials",
     "imgs": 2,
     "body": [
-      "A series of four long-form advertorial pieces involving animation and scrolling parallax features.",
+      "A series of three long-form advertorial pieces involving animation and scrolling parallax features.",
       "Challenges involved building various selectable gallery elements, including an interactive events calendar and profile components, that all had to look and function perfectly on all viewports."
     ],
     "links": [
       {
-        "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/culture-and-events-australia/",
-        "label": "Culture and events Australia - Interactive, responsive long form advertorials >"
+        "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/tours-around-australia",
+        "label": "Culture and events Australia - Journeys >"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/wonderful-wildlife/",
+        "label": "Culture and events Australia - Wildlife & Nature >"
+      },
+      {
+        "link": "https://www.telegraph.co.uk/travel/plan-your-australian-holiday/territory-beach-guide/",
+        "label": "Culture and events Australia - Beach & Island Life >"
       }
     ],
     "tags": [
@@ -77,7 +85,7 @@
       "WordPress",
       "PHP",
       "Twitter",
-      "Philosophy Design",
+      "Philosophy",
       "Bootstrap",
       "jQuery",
       "Before the Tour",
@@ -192,7 +200,7 @@
     "tags": [
       "WordPress",
       "Bootstrap",
-      "Philosophy Design",
+      "Philosophy",
       "HTML",
       "CSS",
       "JavaScript",
@@ -413,13 +421,14 @@
     ],
     "tags": [
       "React",
-      "Typescript",
+      "TypeScript",
       "Netlify",
       "HTML",
       "CSS",
       "JavaScript",
       "Hyperlathe",
-      "Portfolio"
+      "Portfolio",
+      "Design"
     ]
   },
   {
@@ -446,7 +455,7 @@
       "JavaScript",
       "Invenias",
       "Mega menu",
-      "Philosophy Design",
+      "Philosophy",
       "Design",
       "UI"
     ]
@@ -622,7 +631,7 @@
       "Bootstrap",
       "Mission Housing",
       "jQuery",
-      "Philosophy Design",
+      "Philosophy",
       "HTML",
       "CSS",
       "JavaScript"
@@ -648,7 +657,8 @@
       "Design",
       "Payment Card Solutions",
       "Fintech",
-      "UX"]
+      "UX"
+    ]
   },
   {
     "id": "princess-cruises",
