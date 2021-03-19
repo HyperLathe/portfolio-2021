@@ -88,7 +88,7 @@ function About() {
         <p>Prior to my current career path, I worked as a composer and copywriter; both of which I found to be useful methodologies in thinking about effective engagement and communication.</p>
         <p>Since 2009 I have been an active participant at <a href={'https://burningman.org/'} target='_blank' rel='noopener noreferrer'>Burning Man</a>, a yearly event focusing on community, art, and self-expression that takes place in the Nevada Desert. I provide artwork and design assets for the Burning Man Organisation and the related metalworking camp I am a member of, <a href={'http://www.ironmonkeyarts.org/'} target='_blank' rel='noopener noreferrer'>Iron Monkey Arts</a>. In 2018 one of my Burning Man Fire Conclave map designs was included in an <a href={'https://americanart.si.edu/exhibitions/burning-man'} target='_blank' rel='noopener noreferrer'>exhibition at the Smithsonian in Washington DC</a>.</p>
         <GenericPic src={require('../img/smithsonian.jpg').default} alt={'Richard Young at the Smithsonian Museum, Washington DC'} />
-        <p>I'm currently living in Richmond, London, and frequently enjoy the green spaces of Richmond Park or Kew Gardens. In my spare time I also enjoy cooking for friends, cinema, and live music (when there isn't a pandemic happening).</p> 
+        <p>I'm currently living in Richmond, London, and frequently enjoy the green spaces of Richmond Park and Kew Gardens. In my spare time I also enjoy cooking for friends, cinema, and live music (when there isn't a pandemic happening).</p> 
         <p>Feel free to email me at info@hyperlathe.com if you would like to discuss working together.</p>
       </section>
     </Content>
