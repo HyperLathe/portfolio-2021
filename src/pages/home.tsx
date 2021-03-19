@@ -1,12 +1,9 @@
-
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import PortfolioData from '../content/portfolio_content.json';
 
 const Content = styled.div `
-  img {
-    max-width: 100%;
-  }
   h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -29,7 +26,7 @@ const Content = styled.div `
     color: ${({ theme }) => theme.headers};
     @media screen and (min-width: 768px) {
       font-size: 1.25rem;
-      margin: 60px 0px 20px 0px;
+      margin: 60px 0px 10px 0px;
     }
   }
   p {
@@ -115,23 +112,30 @@ const FeaturedBlock = styled.div `
 
 
 function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
       <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
-      <h3>Problem Solving Via:</h3>
-      <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, WordPress, image editing.</p>
+      <h3>Technologies:</h3>
+      <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, WordPress, image editing, basic video editing.</p>
+      <h3>Tools:</h3>
+      <p>VSCode, Github, Adobe Creative Suite, Figma, MAMP Pro, Browserstack, Zoom, Microsoft Teams, Trello.</p>
       <h3>Featured projects:</h3>
 
       <FeaturedBlock>
       {Object.entries(PortfolioData).map(([key, value]) => {
-         {return (value.featured === false) ? '' :
+         return (value.featured === false) ? '' :
          <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.title}</label></span></Link>
-        } 
+         
       })}
       </FeaturedBlock>
 
-      <p>For a more comprehensive list of projects, please check out my <Link to='/portfolio/'>portfolio</Link>, and to discuss your requirements please email info(at)hyperlathe.com.</p>
+      <p>For a more comprehensive list of projects, please check out my <Link to='/portfolio/'>portfolio</Link>, and to discuss your requirements please email info@hyperlathe.com.</p>
     </Content>
   );
 }

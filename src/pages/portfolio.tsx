@@ -2,9 +2,6 @@ import styled from "styled-components/macro";
 import NavList from "../components/NavList";
 
 const Content = styled.div `
-  img {
-    max-width: 100%;
-  }
   h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;

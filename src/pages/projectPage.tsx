@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const Content = styled.div `
-  img {
-    max-width: 100%;
-  }
   h2 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -130,17 +127,17 @@ interface Project {
 }
 
 
-function ProjectPage({id, nav, title, imgs, body, links, tags}: Project) {
+function ProjectPage({id, title, imgs, body, links, tags}: Project) {
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   
 
-  const ImageArray = [...Array(imgs)].map((key, i) => {
+  const ImageArray = [...Array(imgs)].map((item, i) => {
     return ( (links[0].link === 'n/a') ? 
-    <Link key={key} to={'/portfolio'}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></Link> :
-    <a key={key} href={links[0].link} target='_blank'><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} key={i} alt={title + ' screenshot'} /></a>
+    <Link to={'/portfolio'} key={i}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} alt={title + ' screenshot'} /></Link> :
+    <a href={links[0].link} target='_blank' rel='noopener noreferrer' key={i} ><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} alt={title + ' screenshot'} /></a>
     );
   });
 

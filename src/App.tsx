@@ -110,6 +110,9 @@ const Nav = styled.nav`
 			color: ${({ theme }) => theme.navText};
 			margin-bottom: 7px;
 			transition: all 0.1s linear;
+				&.active {
+						color: ${({ theme }) => theme.navSelectedText};
+			}	
 				&:first-child {
 					margin-top: 10px;
 				}
@@ -141,7 +144,6 @@ const Nav = styled.nav`
 						border-right: 1px solid #b4b4b4;
 					}
 					&.active {
-						color: ${({ theme }) => theme.navSelectedText};
 						@media (hover: hover) {
 							&:hover {
 								color: ${({ theme }) => theme.navSelectedHoverText};
@@ -207,6 +209,7 @@ const MobileExtraLinks = styled.div`
 		p {
 			margin: 15px 0px 7px 0px;
 			font-size: 0.8rem;
+			text-decoration: underline;
 		}
 		a {
 			font-size: 0.8rem;
@@ -240,6 +243,7 @@ const Footer = styled.footer`
 	height: 35px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
   padding: 0px 30px;
 	border-top: 1px solid #b4b4b4;
 	font-size: 0.8rem;
@@ -298,7 +302,7 @@ function App() {
 						)}
 						
 					</Content>
-					 <Footer>© {displayYear} Hyperlathe Ltd</Footer>
+					 <Footer><span>© {displayYear} Hyperlathe Ltd</span><span>info@hyperlathe.com</span></Footer>
 				</Main>
 			</BrowserRouter>
 		</ThemeProvider>

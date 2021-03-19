@@ -110,14 +110,12 @@ const TagIcons = styled.div `
 
 function NavList() {
 
-    {/* setting up the search states: */}
     const [searchText, setSearchText] = useState("");
     const [searchResults, setSearchResults] = useState<object[]>([]);
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setSearchText(e.currentTarget.value);
     };
   
-    {/* search function hook: */}
     useEffect(() => {
     const result = PortfolioData.filter(({tags}) => {
       return tags.some(e => e.toLowerCase().includes(searchText.toLowerCase()))
