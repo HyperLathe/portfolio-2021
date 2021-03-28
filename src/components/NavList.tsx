@@ -87,6 +87,7 @@ const NavListContainer = styled.div`
      @media screen and (min-width: 768px) {
       margin: 0.5vw;
       width: 23%;
+  transition: all 0.2s linear;
         &:after {
           padding-bottom: 100%;
         }
@@ -94,7 +95,6 @@ const NavListContainer = styled.div`
    }
    @media screen and (min-width: 768px) {
       flex-direction: row;
-
    }
 `;
 
