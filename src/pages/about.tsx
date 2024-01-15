@@ -78,7 +78,7 @@ function About() {
     <Content>
       <h2>About</h2>
       <section>
-        <ProfilePic src={require('../img/richardyoung.jpg').default} alt={'Richard Young'} />
+        <ProfilePic src={require('../img/richardyoung.jpg')} alt={'Richard Young'} />
         <p>Having worked in perm and contract roles since 2004, I enjoy all aspects of front-end development, as well as wireframing, UX, prototyping, design, and testing. I am a huge fan of responsive design, accessibility, and clean, semantic markup, and have worked in a number of industries including e-commerce, finance, communications, and insurance.</p>
         <p>My strengths lie in building robust, performant user interfaces that function well and display correctly on all screens and devices. My historically hybrid approach has helped me gain an 'holistic' appreciation for how web content should look and function, and in that regard I enjoy opportunities to contribute to the design process, as well as assist with UX wherever relevant.</p>
         <p>I also offer a bespoke service for designing and/or building websites from the ground up, for SMEs of all kinds. Contact me at info@hyperlathe.com to find out more, or to discuss contract or perm roles.</p>
@@ -87,7 +87,7 @@ function About() {
         <h3>Other information:</h3>
         <p>Prior to my current career path, I worked as a composer and copywriter; both of which I found to be useful methodologies in thinking about effective engagement and communication.</p>
         <p>Since 2009 I have been an active participant at <a href={'https://burningman.org/'} target='_blank' rel='noopener noreferrer'>Burning Man</a>, a yearly event focusing on community, art, and self-expression that takes place in the Nevada Desert. I provide artwork and design assets for the Burning Man Organisation and the related metalworking camp I am a member of, <a href={'http://www.ironmonkeyarts.org/'} target='_blank' rel='noopener noreferrer'>Iron Monkey Arts</a>. In 2018 one of my Burning Man Fire Conclave map designs was included in an <a href={'https://americanart.si.edu/exhibitions/burning-man'} target='_blank' rel='noopener noreferrer'>exhibition at the Smithsonian in Washington DC</a>.</p>
-        <GenericPic src={require('../img/smithsonian.jpg').default} alt={'Richard Young at the Smithsonian Museum, Washington DC'} />
+        <GenericPic src={require('../img/smithsonian.jpg')} alt={'Richard Young at the Smithsonian Museum, Washington DC'} />
         <p>I'm currently living in Richmond, London, and frequently enjoy the green spaces of Richmond Park and Kew Gardens. In my spare time I also enjoy cooking for friends, cinema, and live music. My newest passion is <a href={'https://www.instagram.com/partyrichter'} target='_blank' rel='noopener noreferrer'>astrophotography, some of which you can view on my personal Instagram page</a>.</p>
         <p>Feel free to email me at info@hyperlathe.com if you would like to discuss working together.</p>
       </section>

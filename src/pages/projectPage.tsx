@@ -64,7 +64,7 @@ const ImageBlock = styled.div `
 `;
 
 const LinkBlock = styled.div `
-  margin: 40px 0; 
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -132,12 +132,12 @@ function ProjectPage({id, title, imgs, body, links, tags}: Project) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  
+
 
   const ImageArray = [...Array(imgs)].map((item, i) => {
-    return ( (links[0].link === 'n/a') ? 
-    <Link to={'/portfolio'} key={i}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} alt={title + ' screenshot'} /></Link> :
-    <a href={links[0].link} target='_blank' rel='noopener noreferrer' key={i} ><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" ).default} alt={title + ' screenshot'} /></a>
+    return ( (links[0].link === 'n/a') ?
+    <Link to={'/portfolio'} key={i}><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" )} alt={title + ' screenshot'} /></Link> :
+    <a href={links[0].link} target='_blank' rel='noopener noreferrer' key={i} ><img src={require("../img/portfolio/" + id + "_0" + (i + 1) + ".jpg" )} alt={title + ' screenshot'} /></a>
     );
   });
 
@@ -152,7 +152,7 @@ function ProjectPage({id, title, imgs, body, links, tags}: Project) {
         <LinkBlock>
         {(links[0].link === 'n/a') ? <p>No external link(s) available.</p> : links.map((value, key) => {
             return <a key={key} href={value.link} target="_blank" rel="noopener noreferrer" title={value.label}>{value.label}</a>
-          })} 
+          })}
         </LinkBlock>
       </section>
 

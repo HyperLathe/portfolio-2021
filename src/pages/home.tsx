@@ -116,7 +116,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  
+
   return (
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
@@ -130,8 +130,8 @@ function Home() {
       <FeaturedBlock>
       {Object.entries(PortfolioData).map(([key, value]) => {
          return (value.featured === false) ? '' :
-         <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.title}</label></span></Link>
-         
+         <Link to={'portfolio/' + value.id}key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ) + ')'}}><span><label>{value.title}</label></span></Link>
+
       })}
       </FeaturedBlock>
 

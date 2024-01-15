@@ -115,7 +115,7 @@ function NavList() {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setSearchText(e.currentTarget.value);
     };
-  
+
     useEffect(() => {
     const result = PortfolioData.filter(({tags}) => {
       return tags.some(e => e.toLowerCase().includes(searchText.toLowerCase()))
@@ -136,7 +136,7 @@ function NavList() {
     <section>
     <NavListContainer>
     {searchResults.map((value: any, key) => (
-        <Link to={'/portfolio/' + value.id } key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ).default + ')'}}><span><label>{value.nav}
+        <Link to={'/portfolio/' + value.id } key={key} style={{backgroundImage: 'url(' + require('../img/portfolio/' + value.id + '_01.jpg' ) + ')'}}><span><label>{value.nav}
        <TagIcons>
           {(value.tags.includes("React")? <i><DiReact color="#61DBFB" /></i> : '')}
           {(value.tags.includes("VueJS")? <i><RiVuejsFill color="#41B883" /></i> : '')}
