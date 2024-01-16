@@ -120,7 +120,7 @@ function Home() {
   return (
     <Content>
       <h2>Richard Young: Front-end Developer</h2>
-      <p>With over 16 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
+      <p>With almost 20 years’ industry experience, I am an accomplished front-end developer with a good knowledge of design and UX/UI. I have a strong problem-solving mindset, an eye for detail, and excellent communication skills.</p>
       <h3>Technologies:</h3>
       <p>HTML, CSS/SCSS, JavaScript, React, VueJS, UX/UI, wireframing, prototyping, user testing, responsive design, html emails, WordPress, image editing, basic video editing.</p>
       <h3>Tools:</h3>
